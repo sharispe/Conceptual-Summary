@@ -1,0 +1,62 @@
+juges ; terms ; Concepts
+J1 ; vanilla ; vanilla
+ ;  laurel ; laurel
+ ;  caramel ; caramel
+ ;  floral  ; floral
+J2 ; reducer ; reduced
+ ;  citrus ; citrus fruits
+ ;  grapefruit ; grapefruit
+ ;  currant  ; currant
+J3 ; fish ;  animal
+ ;  animal ;  animal
+ ;  burned pepper ; smoke
+ ;  menthol  ; spearmint
+J4 ;  red fruit ; red fruits
+ ;  cherry ; cherry
+J5 ; alcohol ; alcohol
+ ;  ethanol ; solvent
+ ;  vegetal ; vegetal
+ ;  green pepper  ; green pepper
+J6 ;  vegetal ; vegetal
+ ;  green ; grass
+ ;  white fruits ; fresh fruits
+ ;  apple ; apple
+J7 ;  concentrated red fruit ; red fruits compote
+ ;  mocha ; mocha
+ ;  coffee ; coffee
+ ;  licorice ; licorice
+ ;  floral ; floral
+ ;  pink ; rose
+          J8 ;  red pepper ; green vegetables
+J9 ; cooked black fruit  ; ripe black fruits
+ ; cooked black fruit  ; cooked black fruits
+ ; iris  ; iris
+ ;  Spice ; spicy
+ ; compote ; fruits compote
+ ; floral ; floral
+J10 ;  pepper  ; pepper
+ ; cooked vegetal  ; vegetal
+ ;  lemony ; lemon
+ ;  drywood  ; woody
+J11 ;  red fruit ; red fruits
+ ;  fresh cherry ; cherry
+ ;  vegetal  ; vegetal
+ ;  grilled ; roasted
+J12 ; pepper ; pepper
+ ;  reduced ; reduced
+ ; stable ; animal
+J13 ;  herbaceous ; herbaceous
+ ;  green pepper ; green pepper
+ ;  spicy ; spicy
+ ;  cooked fruit ; ripe fruits
+ ;  cooked fruit ; cooked fruits
+ ;  plum  ; plum
+ ; vegetal ; vegetal
+J14 ; dry grass ; dry grass
+ ;  bean ; green vegetables
+ ;  black currant  ; black currant
+J15 ; smoky ; smoke
+ ;  dry vegetal  ; dry vegetal
+ ;  mushroom ;  mushroom
+ ;  fruit ; fruits
+ ; hay ; hay

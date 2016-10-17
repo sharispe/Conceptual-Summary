@@ -1,0 +1,64 @@
+juges ; terms ; Concepts
+J1 ; cherry ; cherry
+ ;  vegetal ; vegetal
+ ;  raspberry ; raspberry
+ ;  greenbean  ; green vegetables
+J2 ; vanilla ; vanilla
+ ;  floral ; floral
+ ; whitefruits ; fresh fruits
+ ;  fresh red fruits  ; fresh red fruits
+J3 ; chard fruit ; ripe fruits
+ ; chard fruit ; cooked fruits
+ ;  milk  ; milk
+ ;  acetic ; vinegar
+ ;  alcohol ; alcohol
+ ;  solvent  ; solvent
+J4 ;  reduction ; reduced
+ ;  blackfruit ; black fruits
+ ;  blackberry ; blackberries
+ ;  grilled ; roasted
+J5 ; blackfruit ; black fruits
+ ;  blackberry ; blackberries
+ ;  blueberry ; blueberries
+ ;  blackcurrant ; black currant
+ ;  vegetal ; vegetal
+ ;  pyrazines  ; empyreumatic
+J6 ; floral ; floral
+ ;  water ; chemical
+ ;  redberries ; fresh red fruits
+ ;  redcurrant ; currant
+J7 ;  redfruit ; red fruits
+ ;  smoked ; smoke
+ ;  pepper ; pepper
+J8 ; spicy  ; spicy
+ ;  peony ; peony
+ ;  wet peel ; rotten
+ ;  blackberry  ; blackberries
+J9 ;  reduction  ; reduced
+ ;  vegetal ; vegetal
+J10 ;  dusty ; woody
+ ;  dry grass  ; dry grass
+ ;  tea ; tea
+ ; fruit ; fruits
+ ;  cooked strawberry ; ripe red fruits
+ ;  cooked strawberry ; cooked red fruits
+ ;  white flower  ; white flowers
+J11 ;  milk ; milk
+ ;  caramel ; caramel
+ ;  blackcherry  ; black cherry
+J12 ; vegetal ; vegetal
+ ;  bell pepper ; bell pepper
+J13 ;  fresh fruit ; fresh fruits
+ ;  raspberry ; raspberry
+ ;  banana ; banana
+ ;  amylic  ; amylic
+J14 ; dryvegetal ; dry vegetal
+ ;  hay ; hay
+ ;  brandy ; ripe or cooked fruits
+ ;  spices ; spicy
+ ;  pepper ; pepper
+ ;  fig  ; fresh fruits
+J15 ; blackcurrant cream ; black fruits compote
+ ;  black currant ; black currant
+ ; fruit ; fruits
+ ; black cherry  ; black cherry

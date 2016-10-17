@@ -22,7 +22,6 @@ import slib.graph.model.graph.G;
 import slib.graph.model.impl.repo.URIFactoryMemory;
 import slib.graph.model.repo.URIFactory;
 import slib.sml.sm.core.engine.SM_Engine;
-import slib.utils.impl.UtilDebug;
 
 /**
  *
@@ -32,6 +31,7 @@ public class XP_IEEE {
 
     public static void main(String[] args) throws Exception {
 
+        // see data directory
         String onto_file = "/data/experiments/massissilia/cuts/taxo_vins.owl";
         String label_file = "/data/experiments/massissilia/cuts/labels_taxo_vins.tsv";
         String query_file_directory = "/data/experiments/massissilia/cuts/queries/";

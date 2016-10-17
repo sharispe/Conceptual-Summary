@@ -1,0 +1,70 @@
+juges ; terms ; Concepts
+J1 ; red fruits ; red fruits
+ ;  citrus ; citrus fruits
+ ;  vegetal ; vegetal
+ ;  hay  ; hay
+J2 ;  spicy ; spicy
+ ;  citrus ; citrus fruits
+ ;  amylic ; amylic
+ ;  floral    ; floral
+ ; whitefruit ; peach
+ ; peach ; peach
+J3 ; orange juice ; citrus fruits
+ ;  mandarin ; mandarin
+ ;  rhubarb ; citrus fruits
+ ;  lemon ; lemon
+ ;  raspberry ; raspberry
+ ;  black currant ; black currant
+ ;  lawn ; grass
+ ;  damson  ; damp earth
+J4 ;  cooked fruit ; ripe  fruits
+ ; cooked fruit ; cooked fruits
+ ;  cherry ; cherry
+ ;  strawberry ; strawberry
+ ;  spice  ; spicy
+J5 ;  cutgrass ; cut grass
+ ;  greenfruit ; fresh fruits
+ ;  blackfruit ; black fruits
+ ;  blackberry  ; blackberries
+ ;  blackcurrant ; black currant
+ ;  spicy ; spicy
+ ;  pepper ; spicy
+           J6 ;  alcohol ; alcohol
+J7 ; vegetal ; vegetal
+ ;  asparagus  ; asparagus
+ ;  cooked fruit ; ripe fruits
+ ;  cooked fruit ; cooked fruits
+ ;  spices ; spicy
+J8 ; blackberry ; blackberries
+ ;  zan ; licorice
+ ;  licorice  ; licorice
+          J9 ; reduces ; reduced
+J10 ; moldy ; moldy
+ ;  dust ; woody
+ ;  vegetal  ; vegetal
+ ;  lemon ; lemon
+ ;  citrus  ; citrus fruits
+ ;  grapefruit zest  ; grapefruit
+J11 ;  red fruit ; red fruits
+ ;  toast ; roasted
+ ;  milk ; milk
+ ;  fresh vegetal  ; fresh vegetal
+J12 ; nutmeg ; nutmeg
+ ; pepper ; spicy
+J13 ;  amylic ; amylic
+ ;  acetate ; industrial chemical
+ ;  amylic ; amylic
+ ;  banana ; banana
+ ;  raspberry ; raspberry
+ ;  fresh vegetal ; fresh vegetal
+ ;  mint ; mint
+J14 ;  dry grass ; dry grass
+ ;  strawberry ; strawberry
+ ;  fig ; fresh fruits
+ ;  laurel  ; laurel
+J15 ; blackcurrant ; black currant
+ ; blackcurrant cream ; black fruits compote
+ ;  very fruit ; fruits
+ ; pyrazines ; pepper
+ ;  greenpepper ; pepper
+ ;   vegetal  ; vegetal

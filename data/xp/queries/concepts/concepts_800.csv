@@ -1,0 +1,77 @@
+juges ; terms ; Concepts
+J1 ;  metal ; industrial chemical
+ ;  cooked cherry ; ripe fruits
+ ;  cooked cherry ; cooked fruits
+ ;  cinnamon ; cinnamon
+J2 ;  reduced ; reduced
+J3 ; rhubarb ; citrus fruits
+ ;  black currant ; black currant
+ ;  grapefruit ; grapefruit
+ ;  lemon ; lemon
+ ;  cardamom ; cardamom
+ ;  fennel ; fennel
+ ;  menthol ; spearmint
+ ;  eucalyptus ; eucalyptus
+ ;  raspberry ; raspberry
+ ;  cherry  ; cherry
+J4 ; burned ; smoke
+ ;  rubber ; rubber
+ ;  reduced ; reduced
+ ;  mercaptan ; rotten egg
+J5 ; vegetal ; vegetal
+ ;  hay ; hay
+ ;  floral ; floral
+ ;  peony ; peony
+ ;  redfruit ; red fruits
+ ;  cherry ; cherry
+ ;  currant ; currant
+ ;  spicy ; spicy
+ ;  licorice ; licorice
+ ;  vanilla  ; vanilla
+J6 ; burnt caramel ; smoke
+ ;  musty ; moldy
+ ;  bitter almond ; spices dessert
+ ;  animal ;  animal
+ ;  leather ; leather
+ ; english candy ; english candies
+J7 ; milk ; milk
+ ;  red fruits ; red fruits
+ ;  black currant ; black currant
+ ;  soot ; soot
+ ;  floral ; floral
+ ; empyreumatic ; empyreumatic
+ ;  peppery ; pepper
+ ;  spicy  ; spicy
+J8 ; cooked black currant ; ripe black fruits
+ ; cooked black currant ; cooked black fruits
+ ;  blackberry  ; blackberries
+J9 ;   reduced ; reduced
+ ;   undergrowth ;  undergrowth
+ ;  earthy ; damp earth
+J10 ; reduces  ; reduced
+ ;  vegetal  ; vegetal
+ ;  fresh fruit ; fresh fruits
+J11 ;  floral ; floral
+ ;  vegetal ; vegetal
+ ;  leather ; leather
+ ;   cheese ; fermented
+ ;  oil (pétrolé) ; industrial chemical
+J12 ; nuts ; nuts
+ ;  oil ; green vegetables
+ ;  burnt ; smoke
+ ;  rubber  ; rubber
+J13 ;  sweat ; sweat
+ ;  blackcurrant buds ; ripe black fruits
+ ;  blackcurrant buds ; cooked black fruits
+ ;  reduction ; reduced
+ ;  fresh vegetal ; fresh vegetal
+ ;  fresh red fruit  ; fresh red fruits
+J14 ; blackcurrant cream ; black fruits compote
+ ; amylic ; amylic
+ ;  raspberry  ; raspberry
+J15 ;  black fruit ; black fruits
+ ;  black cherry ; black cherry
+ ; red fruit  ; red fruits
+ ;  black currant  ; black currant
+ ;   fruit ; fruits
+ ;  amylic   ; amylic

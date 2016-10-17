@@ -1,0 +1,71 @@
+juges ; terms ; Concepts
+J1 ; cooked strawberry ; ripe red fruits
+ ; cooked strawberry ; cooked red fruits
+ ;  oxidized ; oxidized
+ ;  alcohol ; alcohol
+ ;  pepper  ; pepper
+J2 ;  vanilla ; vanilla
+ ;  compote ; fruits compote
+ ;  coffee  ; coffee
+J3 ;  wax ; waxes
+ ;  burned milk ; smoke
+ ;  prune brandy ; dried fruits
+ ;  dry hay ; hay
+ ;  laurel ; laurel
+ ;  cake ; cake
+J4 ; acetic ; vinegar
+ ;  ascecent ; fermented
+ ;  ethyl acetate  ; solvent
+J5 ; black fruit ; black fruits
+ ;  blackberry ; blackberries
+ ;  blueberry ; blueberries
+ ;  black currant ; black currant
+ ;  hay ; hay
+ ;  green pepper  ; green pepper
+J6 ;  walnuts ; nuts
+ ;  olive oil ; hydrocarbon
+ ;  grilled ; roasted
+J7 ;  reduction ; reduced
+ ;  fruit  ; fruits
+ ;  strawberry ; strawberry
+ ;  red fruits ; red fruits
+ ;  floral ;  floral
+J8 ; gouache ; solvent
+ ;  animal ;  animal
+ ;  milk ; milk
+J9 ; fresh  red fruit ; fresh red fruits
+ ;  raspberries ; raspberry
+ ;  strawberries  ; strawberry
+ ;  floral  ;  floral
+ ;  blue flowers   ; blue flowers
+ ; greenfern  ; floral
+ ; black currant ; black currant
+J10 ;  fruit  ; fruits
+ ;  black currant ; black currant
+ ;  plum ; plum
+ ;  prune ; prune
+ ;  spicy ; spicy
+ ;   thyme ; thyme
+ ;  mint  ; mint
+ ;  leather ; leather
+J11 ;  vegetation ; vegetal
+ ;  hay ; hay
+ ;  grilled ; roasted
+ ;  leather  ; leather
+J12 ; compote ; fruits compote
+ ;  spices ; spicy
+ ;  burnt ; smoke
+ ;  greenness ; grass
+J13 ;  cooked fruit ; cooked fruits
+ ;  cooked fruit ; ripe fruits
+ ;  prune ; prune
+ ;  dry fruits ; dried fruits
+ ;  almond  ; dried almonds
+J14 ; plum ; plum
+ ;  dry wood ; woody
+ ;  tea ; tea
+J15 ; cooked red fruits ;  cooked red fruits
+ ; cooked red fruits ; ripe red fruits
+ ;  vegetal ; vegetal
+ ;  burnt ; smoke
+ ;  herbaceous  ; herbaceous

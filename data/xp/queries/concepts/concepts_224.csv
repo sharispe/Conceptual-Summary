@@ -1,0 +1,70 @@
+juges ; terms ; Concepts
+J1 ; oxidized ; oxidized
+ ; pineapple ; pineapple
+ ; metal ; industrial chemical
+ ; cherry brandy ; cherry brandy
+ ; alcohol ; alcohol
+J2 ; oxidized ; oxidized
+ ; brandy ; cherry brandy
+J3 ; plum ; plum
+ ; laurel ; laurel
+ ; hay ; hay
+ ; cookedspinash ; green vegetables
+ ; alcohol ; alcohol
+ ; tar ; tar
+ ; burnt milk ; smoke
+J4 ; cooked fruits ; ripe fruits
+ ; cooked fruits ; cooked fruits
+ ; jam berries ; fruits jam
+ ; cooked strawberry ; red fruits compote
+ ; licorice ; licorice
+J5 ; cookedfruits ; ripe fruits
+ ; cookedfruits ; cooked fruits
+ ; pear ; pear
+ ; caramel ; caramel
+ ; milk ; milk
+ ; prune ; prune
+J6 ; yellow fruits ; prune
+ ; prune ; 
+ ; dry fruits ; prune
+ ; prune ; 
+ ; black fruits ; black fruits
+ ; black berries ; blackberries
+ ; black currant ; black currant
+J7 ; compote ; fruits compote
+ ; vegetal ; vegetal
+J8 ; vanilla ; vanilla
+J9 ; cookedblackfruit ; ripe fruits
+ ; cookedblackfruit ; cooked fruits
+ ; licorice ; licorice
+ ; vegetal ; vegetal
+J10 ; cooked pepper ; pepper
+ ; tea ; tea
+ ; dry grass ; dry grass
+ ; animal ; animal
+ ; meaty sauce ; meat juice
+J11 ; dry wood ; woody
+ ; vegetal ; vegetal
+ ; pyrazine ; empyreumatic
+ ; eucalyptus ; eucalyptus
+ ; red fruits ; red fruits
+J12 ; vegetal ; vegetal
+ ; pepper ; pepper
+ ; crilled sausage ; sausage
+ ; chorizo ; meat
+J13 ; prune ; prune
+ ;  brandy ; ripe or cooked fruits
+ ; cherry ; cherry
+ ; animal ; animal
+ ; dryvegetal ; dry vegetal
+ ; hay ; hay
+J14 ; prune ; prune
+ ; licorice ; licorice
+ ; caramel ; caramel
+ ; hay ; hay
+J15 ; cookedredfruit ; cooked red fruits
+ ; cookedredfruit ;  ripe red fruits
+ ; redpepper ; green vegetables
+ ; fruit ; fruits
+ ; spicy ; spicy
+ ; clove ; clove

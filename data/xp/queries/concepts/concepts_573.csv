@@ -1,0 +1,60 @@
+juges ; terms ; Concepts
+J1 ; orange ; orange
+ ;  moldy  ; moldy
+J2 ;  amylic ; amylic
+ ;  strawberry ; strawberry
+ ;  citrus ; citrus fruits
+ ;  peach ; peach
+ ;  spicy ; spicy
+J3 ; grapefruit ; grapefruit
+ ;  lemon ; lemon
+ ;  cardamom ; cardamom
+ ;  milk ; milk
+ ; black currant ; black currant
+ ;  blackcurrant buds ; ripe black fruits
+ ;  blackcurrant buds ; cooked black fruits
+J4 ; vegetal  ; vegetal
+ ;  pepper ; pepper
+ ;  blackcurrant buds ; ripe black fruits
+ ;  blackcurrant buds ; cooked black fruits
+J5 ;  floral ; floral
+ ;  white flowers ; white flowers
+ ;  thiols ; citrus fruits
+ ;  grapefruit ; grapefruit
+ ;  rhubarb ; citrus fruits
+J6 ;  strawberry  ; strawberry
+ ; citrus ; citrus fruits
+ ; lime ; lime
+ ;  redfruits ; red fruits
+ ; mango ; mango
+ ;  pineapple ; pineapple
+ ; exotic fruits ; exotic fruits
+J7 ; spices ; spicy
+ ;  fruit ; fruits
+ ; black currant  ; black currant
+ ;  raspberry ; raspberry
+ ;  vegetal   ; vegetal
+ ;  smoked  ; smoke
+J8 ; blackcurrant cream ; black fruits compote
+ ; reduces  ; reduced
+J9 ; red fruit   ; red fruits
+ ;  black currant  ; black currant
+J10 ;  chocolate ; black chocolate
+ ;  cooked fruit ; ripe or cooked fruits
+ ;  jam ; fruits jam
+ ;  plum ; plum
+ ;  black cherry ; black cherry
+ ;  oxidized  ; oxidized
+ ;  drygrass ; dry grass
+J11 ;  cooked black currant  ; ripe black fruits
+ ;  cooked black currant  ; cooked black fruits
+J12 ; reduces  ; reduced
+ ;  cookedcabbage ; cooked cabbage
+ ;  burnt  ; smoke
+J13 ;  blackcurrantsyrup  ; black fruits compote
+J14 ; blackcurrant cream ; black fruits compote
+ ;  drygrass ; dry grass
+ ;  violet ; violet
+ ;  raspberry ; raspberry
+J15 ; blackcurrantjam ; black fruits jam
+ ; blackcurrant  ; black currant

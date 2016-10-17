@@ -1,0 +1,67 @@
+juges ; termes ; Concepts
+J1 ; alcohol ; alcohol
+ ; vanilla ; vanilla
+ ; jam ; fruits jam
+ ; apple ; apple
+ ; spice ; spicy
+J2 ; vegetal ; vegetal
+ ; cut grass ; cut grass
+ ; spice ; spicy
+J3 ; strawberry ; strawberry
+ ; milk ; milk
+ ; blackolive ; green vegetables
+ ; alcohol ; alcohol
+ ; fruit ; fruits
+J4 ; spicy ; spicy
+ ; pepper ; pepper
+ ; woody ; woody
+ ; ripe red fruit ; ripe red fruits
+ ; ripe red fruit ; cooked red fruits
+J5 ; quince ; quince
+ ; pear ; pear
+ ; caramel ; caramel
+ ; lactic ; lactic acid
+ ; redfruit ; red fruits
+ ; cherry ; cherry
+ ; rhubarb ; citrus fruits
+J6 ; vegetal ; vegetal
+ ; woody ; woody
+ ; undergrowth ; undergrowth
+ ; earthy ; damp earth
+J7 ; fruit ; fruits
+ ; animal ; animal
+ ; vegetal ; vegetal
+J8 ; apple ; apple
+ ; earthy ; damp earth
+ ; vegetal ; vegetal
+ ; leaf ; green vegetables
+J9 ; redfruit ; red fruits
+ ; spicy ; spicy
+ ; curry ; curry
+J10 ; compote ; fruits compote
+ ; plum ; plum
+ ; prune ; prune
+ ; cake ; cake
+ ; rhubarb ; citrus fruits
+ ; spicy ; spicy
+J11 ; freshvegetal ; fresh vegetal
+ ; violet ; violet
+ ; currant ; currant
+ ; menthol ; spearmint
+ ; ivy ; fresh vegetal
+J12 ; redbeet ; green vegetables
+ ; blackradish ; green vegetables
+J13 ; dryfruit ; dried fruits
+ ; caramel ; caramel
+ ; dust ; woody
+J14 ; red fruits ; red fruits
+ ; raspberry ; raspberry
+ ; strawberry ; strawberry
+ ; plum ; plum
+ ; leaf ; green vegetables
+J15 ; fresh fruits ; fresh fruits
+ ; redfruit ; red fruits
+ ; strawberry ; strawberry
+ ; vegetal ; vegetal
+ ; drygrass ; dry grass
+ ; wet hay ; wet grass

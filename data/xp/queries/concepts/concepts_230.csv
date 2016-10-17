@@ -1,0 +1,68 @@
+juges ; terms ; Concepts
+ ;  grilled ; roasted
+ ;  vanilla ; vanilla
+ ;  curry ; curry
+J2 ;  amylic ; amylic
+ ; citrus ; citrus fruits
+ ;  marshmallow strawberry ; strawberry
+J3 ; grapefruit ; grapefruit
+ ;  black currant ; black currant
+ ;  cherry ; cherry
+ ;  milk ; milk
+ ;  granny apple ; apple
+ ;  pineapple ; pineapple
+ ;  menthol ; mint
+J4 ; amylic ; amylic
+ ; redfruits ; red fruits
+ ; strawberry ; strawberry
+ ; raspberry ; raspberry
+J5 ; acetate ; isoamyl acetate
+ ;  english candy ; english candies
+ ;  caramel ; caramel
+ ;  spicy ; spicy
+ ;  vanilla ; vanilla
+ ;  red fruits ; red fruits
+ ;  strawberry ; strawberry
+ ;  cherry ; cherry
+ ;  vegetal ; vegetal
+J6 ; red fruits ; red fruits
+ ; cherry ; cherry
+ ; almond ; dried almonds
+J7 ;  fruit ; fruits
+ ;  raspberry ; raspberry
+ ;  blackcurrant buds ; ripe black fruits
+ ;  blackcurrant buds ; cooked black fruits
+ ;  amylic  ; amylic
+J8 ; red fruits ; red fruits
+ ;  licorice  ; licorice
+ ;  amylic ; amylic
+ ;  english candy ; english candies
+J9 ; red fruits ; red fruits
+ ; blue flowers  ; blue  flowers
+J10 ; amylic ; amylic
+ ; english candy ; english candies
+ ; caramel ; caramel
+ ; cooked strawberries ; red fruits compote
+ ;  fruit yoghurt ; ripe fruits
+ ;  fruit yoghurt ;  cooked fruits
+
+ ; fruit yoghurt ; fermented
+J11 ;  amylic ; amylic
+ ;  black currant ; black currant
+ ;  Milk ; milk
+J12 ; varnish ; varnish
+ ;  amylic ; amylic
+ ;  banana ; banana
+J13 ;  amylic ; amylic
+ ;  isoamylacetate ; isoamyl acetate
+ ;  banana ; banana
+J14 ; black currant ; black currant
+ ;  raspberry ; raspberry
+ ;  plum ; plum
+ ;  menthol ; spearmint
+J15 ; fresh fruits ; fresh fruits
+ ;  blackcurrant bud ; ripe black fruits
+ ;  blackcurrant bud ; cooked black fruits
+ ;  thiol ; citrus fruits
+ ;  very fruit ; fruits
+ ;  blackcurrant ; black currant

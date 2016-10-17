@@ -1,0 +1,72 @@
+juges ; terms ; Concepts
+J1 ; orange  ; orange
+ ; fresh laurel  ; laurel
+ ;  anise  ; anise
+J2 ;  vegetal ; vegetal
+ ;  spicy ; spicy
+ ;  grilled ; roasted
+ ;  fresh red fruit  ; fresh red fruits
+J3 ; musty ; moldy
+ ;  cedar ; cedar
+ ;  solvent ; solvent
+ ;  acetic ; vinegar
+ ;  old wax ; waxes
+ ;  fungus ; mushroom
+J4 ; red fruit ; red fruits
+ ;  cherry ; cherry
+ ;  spices  ; spicy
+J5 ; blackfruit ; black fruits
+ ;  blackberry ; blackberries
+ ;  blackcurrant ; black currant
+ ;  licorice ; licorice
+ ;  cedar ; cedar
+ ;  tobacco ; tobacco
+J6 ;  animal ;  animal
+ ;  stable ; farm
+ ;  black fruit ; black fruits
+ ;  spice ; spicy
+ ;  nutmeg ; nuts
+J7 ; fresh fruit ; fresh fruits
+ ;  cherries ; cherry
+ ;  candied fruit ; fruits compote
+ ;  vegetal  ; vegetal
+ ;   floral ; floral
+J8 ; yoghurt ; fermented
+ ;  milk ; milk
+ ;  redfruit ; red fruits
+ ;  berry  ; berries
+J9 ;  floral  ; floral
+ ; violet ; violet
+ ;  iris  ; iris
+ ;  rubber  ; rubber
+ ;  solvents  ; solvent
+J10 ; raspberry ; raspberry
+ ;  strawberry ; strawberry
+ ;  black currant ; black currant
+ ;  candied fruits ; fruits compote
+ ;  mint  ; mint
+ ;  spicy ; spicy
+ ;  ginger ; ginger
+J11 ; fresh vegetal ; fresh vegetal
+ ;  berries ; berries
+ ;  currant ; currant
+ ;  smoke  ; smoke
+J12 ; black fruit ; black fruits
+ ;  black currant ; black currant
+ ;  blackberry ; blackberries
+ ;  vegetal  ;  vegetal 
+J13 ; cooked fruit ; cooked fruits
+ ; cooked fruit ; ripe fruits
+ ;  caramel ; caramel
+ ;  fruity brandy ; ripe fruits
+ ;  fruity brandy ; cooked fruits
+ ;  fresh vegetal ; fresh vegetal
+ ;  tomato  leaf  ; green vegetables
+J14 ; dry vegetal ; dry vegetal
+ ;  dry wood ; woody
+ ;  raspberry  ; raspberry
+ ;  black olive  ; green vegetables
+15 ; empyreumatic ; empyreumatic
+ ;  animal ;  animal
+ ;  fruity ; fruits
+ ; fruit ; fruits

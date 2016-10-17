@@ -1,0 +1,2575 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
+    <!ENTITY xsp "http://www.owl-ontologies.com/2005/08/07/xsp.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.owl-ontologies.com/Ontology1456566482.owl#"
+     xml:base="http://www.owl-ontologies.com/Ontology1456566482.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Acacia -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Acacia">
+        <rdfs:label xml:lang="en">acacia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Tree_flowers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Alcohol -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Alcohol">
+        <rdfs:label xml:lang="en">alcohol</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Industrial_chemical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Almond_flowers -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Almond_flowers">
+        <rdfs:label xml:lang="en">almond blossom</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Tree_flowers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Amber -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Amber">
+        <rdfs:label xml:lang="en">amber</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Ammoniac -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Ammoniac">
+        <rdfs:label xml:lang="en">ammoniac</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Industrial_chemical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Amylic -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Amylic">
+        <rdfs:label xml:lang="en">amylic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Animal -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Animal">
+        <rdfs:label xml:lang="en">animal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Anise -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Anise">
+        <rdfs:label>anise</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Spicy_dessert"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Apple -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Apple">
+        <rdfs:label xml:lang="en">apple
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fresh_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Apricot -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Apricot">
+        <rdfs:label xml:lang="en">apricot</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fresh_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Aromatic_herbs -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Aromatic_herbs">
+        <rdfs:label xml:lang="en">aromatic herbs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Ash -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Ash">
+        <rdfs:label xml:lang="en">ash</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Smoke_tobocco"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Aspargus -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Aspargus">
+        <rdfs:label xml:lang="en">aspargus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Green_vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Banana -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Banana">
+        <rdfs:label xml:lang="en">banana
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Amylic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Bark -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Bark">
+        <rdfs:label xml:lang="en">bark</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Woody"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Basalt -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Basalt">
+        <rdfs:label xml:lang="en">basalt</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Mineral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Basil -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Basil">
+        <rdfs:label xml:lang="en">basil</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Aromatic_herbs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Bay_leaf -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Bay_leaf">
+        <rdfs:label xml:lang="en">bay leaf</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Aromatic_herbs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Beeswax -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Beeswax">
+        <rdfs:label xml:lang="en">beeswax</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Honey"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Bell_pepper -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Bell_pepper">
+        <rdfs:label xml:lang="en">bell pepper
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fresh_vegetal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Bergamot -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Bergamot">
+        <rdfs:label xml:lang="en">bergamot
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Citrus_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Berries -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Berries">
+        <rdfs:label xml:lang="en">berries</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Spicy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Berries_for_cooking -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Berries_for_cooking">
+        <rdfs:label xml:lang="en">berries for cooking
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Berries"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Black_cherry -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Black_cherry">
+        <rdfs:label xml:lang="en">black cherry
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fresh_black_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Black_chocolate -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Black_chocolate">
+        <rdfs:label xml:lang="en">black chocolate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Cocoa_caramel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Black_fruits -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Black_fruits">
+        <rdfs:label xml:lang="en">black fruits</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Black_pepper -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Black_pepper">
+        <rdfs:label xml:lang="en">black pepper
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Oriental"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Blackberries -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Blackberries">
+        <rdfs:label xml:lang="en">blackberries</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fresh_black_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Blackcurrant -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Blackcurrant">
+        <rdfs:label xml:lang="en">black currant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fresh_black_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Blond_or_gray_tobacco -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Blond_or_gray_tobacco">
+        <rdfs:label xml:lang="en">blond or gray tobacco</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Smoke_tobocco"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Blue_flowers -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Blue_flowers">
+        <rdfs:label xml:lang="en">blue flowers</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Garden_flower"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Blueberries -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Blueberries">
+        <rdfs:label xml:lang="en">blueberries
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fresh_black_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Bread -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Bread">
+        <rdfs:label xml:lang="en">bread</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fermented"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Cabbage -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Cabbage">
+        <rdfs:label xml:lang="en">cabbage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Green_vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Camphor -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Camphor">
+        <rdfs:label xml:lang="en">camphor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Industrial_chemical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Candle -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Candle">
+        <rdfs:label xml:lang="en">candle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fermented"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Caramel -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Caramel">
+        <rdfs:label xml:lang="en">caramel</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Cocoa_caramel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Cardamom -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Cardamom">
+        <rdfs:label xml:lang="en">cardamom</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Oriental"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Carnations -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Carnations">
+        <rdfs:label xml:lang="en">carnations</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Garden_flower"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Cedar -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Cedar">
+        <rdfs:label xml:lang="en">cedar</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Woody"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Cep -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Cep">
+        <rdfs:label xml:lang="en">cep</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Mushroom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Chalk -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Chalk">
+        <rdfs:label xml:lang="en">chalk</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Mineral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Chamomile -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Chamomile">
+        <rdfs:label xml:lang="en">charmomile</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Infusion_plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Charcoal -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Charcoal">
+        <rdfs:label xml:lang="en">charcoal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Smoke_tobocco"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Chemical -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Chemical">
+        <rdfs:label xml:lang="en">chemical</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Cherry -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Cherry">
+        <rdfs:label xml:lang="en">cherry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fresh_red_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Cherry_brandy -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Cherry_brandy">
+        <rdfs:label xml:lang="en">cherry brandy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Ripe_or_cooked_red_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Chicken -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Chicken">
+        <rdfs:label xml:lang="en">chicken</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Domestic_animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Chlorine -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Chlorine">
+        <rdfs:label xml:lang="en">chlorine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Industrial_chemical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Chrysanthemum -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Chrysanthemum">
+        <rdfs:label xml:lang="en">chrysanthemum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Garden_flower"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Cigar_box -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Cigar_box">
+        <rdfs:label xml:lang="en">cigar box</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Smoke_tobocco"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Cinnamon -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Cinnamon">
+        <rdfs:label xml:lang="en">cinnamon</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Spicy_dessert"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Citrus_fruits -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Citrus_fruits">
+        <rdfs:label xml:lang="en">citrus fruits</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Civet -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Civet">
+        <rdfs:label xml:lang="en">civet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Clay -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Clay">
+        <rdfs:label xml:lang="en">clay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Mineral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Clove -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Clove">
+        <rdfs:label xml:lang="en">clove
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Spicy_dessert"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Cocoa -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Cocoa">
+        <rdfs:label xml:lang="en">cocoa</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Cocoa_caramel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Cocoa_caramel -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Cocoa_caramel">
+        <rdfs:label xml:lang="en">cocoa caramel</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Empyreumatic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Coconut -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Coconut">
+        <rdfs:label xml:lang="en">coconut</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Inshell_dry_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Coffee -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Coffee">
+        <rdfs:label xml:lang="en">coffee</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Cocoa_caramel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Compost -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Compost">
+        <rdfs:label xml:lang="en">compost</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Moist_soil"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Compote -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Compote">
+        <rdfs:label xml:lang="en"> black fruits compote
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Ripe_or_cooked_black_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Cork -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Cork">
+        <rdfs:label xml:lang="en">cork</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Woody"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Cucumber -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Cucumber">
+        <rdfs:label xml:lang="en">cucumber</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Green_vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Cumin -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Cumin">
+        <rdfs:label xml:lang="en">cumin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Oriental"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Currant -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Currant">
+        <rdfs:label xml:lang="en">currant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fresh_red_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Curry -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Curry">
+        <rdfs:label xml:lang="en">curry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Oriental"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Cut_grass -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Cut_grass">
+        <rdfs:label xml:lang="en">cut grass</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fresh_vegetal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Daffodil -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Daffodil">
+        <rdfs:label xml:lang="en">daffodil</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Garden_flower"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Damp_earth -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Damp_earth">
+        <rdfs:label xml:lang="en">damp earth</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Moist_soil"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Disinfectant -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Disinfectant">
+        <rdfs:label xml:lang="en">disinfectant
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Pharmaceutical_chemical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Domestic_animal -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Domestic_animal">
+        <rdfs:label xml:lang="en">domestic animal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Dried_almonds -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Dried_almonds">
+        <rdfs:label xml:lang="en">dried almonds</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Inshell_dry_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Dried_apricots -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Dried_apricots">
+        <rdfs:label xml:lang="en">dried apricots</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Dried_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Dried_dates -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Dried_dates">
+        <rdfs:label xml:lang="en">dried dates</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Dried_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Dried_figs -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Dried_figs">
+        <rdfs:label xml:lang="en">dried figs</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Dried_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Dried_fruits -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Dried_fruits">
+        <rdfs:label xml:lang="en">dried fruits</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Dry_grass -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Dry_grass">
+        <rdfs:label xml:lang="en">dry grass
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Dry_vegetal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Dry_vegetal -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Dry_vegetal">
+        <rdfs:label xml:lang="en">dry vegetal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Vegetal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Elderberry_flowers -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Elderberry_flowers">
+        <rdfs:label xml:lang="en">Elderberry flowers</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Tree_flowers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Empyreumatic -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Empyreumatic">
+        <rdfs:label xml:lang="en">empyreumatic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#English_candies -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#English_candies">
+        <rdfs:label xml:lang="en">english candies</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Amylic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Eucalyptus -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Eucalyptus">
+        <rdfs:label xml:lang="en">eucalyptus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Infusion_plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Exotic_fruits -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Exotic_fruits">
+        <rdfs:label xml:lang="en">exotic fruits
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Farm -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Farm">
+        <rdfs:label xml:lang="en">farm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Domestic_animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Fat -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Fat">
+        <rdfs:label xml:lang="en">fat</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Fennel -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Fennel">
+        <rdfs:label xml:lang="en">fennel</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Green_vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Fermented -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Fermented">
+        <rdfs:label xml:lang="en">fermented</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Fermenting_banana -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Fermenting_banana">
+        <rdfs:label xml:lang="en">fermenting banana</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fermented"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Flint -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Flint">
+        <rdfs:label xml:lang="en">flint</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Mineral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Floral -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Floral">
+        <rdfs:label xml:lang="en">floral</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Flower_broom -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Flower_broom">
+        <rdfs:label xml:lang="en">flower broom</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Shrub_flower"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Fresh_black_fruits -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Fresh_black_fruits">
+        <rdfs:label xml:lang="en">fresh black fruits</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Black_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Fresh_fruits -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Fresh_fruits">
+        <rdfs:label xml:lang="en">fresh fruits</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Fresh_red_fruits -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Fresh_red_fruits">
+        <rdfs:label xml:lang="en">fresh red fruits</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Red_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Fresh_vegetal -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Fresh_vegetal">
+        <rdfs:label xml:lang="en">fresh vegetal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Vegetal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Fruits -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Fruits">
+        <rdfs:label xml:lang="en">fruits</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Fur -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Fur">
+        <rdfs:label xml:lang="en">fur</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Game -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Game">
+        <rdfs:label xml:lang="en">game</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Garden_flower -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Garden_flower">
+        <rdfs:label xml:lang="en">garden flower</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Floral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Ginger -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Ginger">
+        <rdfs:label xml:lang="en">ginger</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Oriental"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Glue -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Glue">
+        <rdfs:label xml:lang="en">glue</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Industrial_chemical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Glycerin -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Glycerin">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Industrial_chemical"/>
+        <rdfs:comment xml:lang="en">glycerin</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Grapefruits -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Grapefruits">
+        <rdfs:label xml:lang="en">grapefruit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Citrus_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Grapes -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Grapes">
+        <rdfs:label xml:lang="en">grapes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Dried_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Graphite -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Graphite">
+        <rdfs:label xml:lang="en">graphite
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Mineral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Grass -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Grass">
+        <rdfs:label xml:lang="en">grass</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fresh_vegetal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Green_olives -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Green_olives">
+        <rdfs:label xml:lang="en">green olives</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Green_vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Green_pepper -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Green_pepper">
+        <rdfs:label xml:lang="en">green pepper
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Berries"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Green_vegetable -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Green_vegetable">
+        <rdfs:label xml:lang="en">green vegetables
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Vegetal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Grenadine_syrup -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Grenadine_syrup">
+        <rdfs:label xml:lang="en">grenadine </rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fresh_red_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Grilled_almonds -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Grilled_almonds">
+        <rdfs:label xml:lang="en">grilled almonds</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Cocoa_caramel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Guts -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Guts">
+        <rdfs:label xml:lang="en">guts</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Domestic_animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Hare -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Hare">
+        <rdfs:label xml:lang="en">hare</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Hawthorn -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Hawthorn">
+        <rdfs:label xml:lang="en">hawthorn</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Shrub_flower"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Hay -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Hay">
+        <rdfs:label xml:lang="en">hay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Dry_vegetal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Hazelnut -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Hazelnut">
+        <rdfs:label xml:lang="en">hazelnut</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Inshell_dry_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Heather -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Heather">
+        <rdfs:label xml:lang="en">heather</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Shrub_flower"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Herbaceous -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Herbaceous">
+        <rdfs:label xml:lang="en">herbaceous</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fresh_vegetal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Herbs -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Herbs">
+        <rdfs:label xml:lang="en">herbs</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Aromatic_herbs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Honey -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Honey">
+        <rdfs:label xml:lang="en">honey
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Floral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Horse -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Horse">
+        <rdfs:label xml:lang="en">horse</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Domestic_animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Humus -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Humus">
+        <rdfs:label xml:lang="en">humus
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Moist_soil"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Hyacinth -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Hyacinth">
+        <rdfs:label xml:lang="en">hyacinth</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Garden_flower"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Hydrocarbon -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Hydrocarbon">
+        <rdfs:label xml:lang="en">hydrocarbon
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Industrial_chemical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Incense -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Incense">
+        <rdfs:label xml:lang="en">incense
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Pharmaceutical_chemical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Industrial_chemical -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Industrial_chemical">
+        <rdfs:label xml:lang="en">industrial chemical</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Chemical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Infusion_plant -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Infusion_plant">
+        <rdfs:label xml:lang="en">infusion plant
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Vegetal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Inshell_dry_fruits -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Inshell_dry_fruits">
+        <rdfs:label xml:lang="en">inshell dry fruits</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Iodine -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Iodine">
+        <rdfs:label xml:lang="en">iodine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Mineral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Iris -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Iris">
+        <rdfs:label xml:lang="en">iris</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Garden_flower"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Isoamyl_acetate -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Isoamyl_acetate">
+        <rdfs:label xml:lang="en">isoamyl acetate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Amylic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Jam -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Jam">
+        <rdfs:label xml:lang="en">red fruits jam</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Ripe_or_cooked_red_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Jasmine -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Jasmine">
+        <rdfs:label xml:lang="en">jasmine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Shrub_flower"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Juniper -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Juniper">
+        <rdfs:label xml:lang="en">juniper
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Berries"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Kiwi -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Kiwi">
+        <rdfs:label xml:lang="en">kiwi</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Exotic_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Lactid_acid -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Lactid_acid">
+        <rdfs:label xml:lang="en">lactic acid</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fermented"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Laurel -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Laurel">
+        <rdfs:label xml:lang="en">laurel</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Aromatic_herbs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Lavender -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Lavender">
+        <rdfs:label xml:lang="en">lavender</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Shrub_flower"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Leather -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Leather">
+        <rdfs:label xml:lang="en">leather</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Domestic_animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Leaves -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Leaves">
+        <rdfs:label xml:lang="en">leaves</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Moist_soil"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Lemon -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Lemon">
+        <rdfs:label xml:lang="en">lemon</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Citrus_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Lemongrass -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Lemongrass">
+        <rdfs:label xml:lang="en">lemongrass</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Aromatic_herbs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Lichen -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Lichen">
+        <rdfs:label xml:lang="en">lichen</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Moist_soil"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Licorice -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Licorice">
+        <rdfs:label xml:lang="en">licorice</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Spicy_dessert"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Lilac -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Lilac">
+        <rdfs:label xml:lang="en">lilac</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Shrub_flower"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Lilies -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Lilies">
+        <rdfs:label xml:lang="en">lilies</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Garden_flower"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Lime -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Lime">
+        <rdfs:label xml:lang="en">lime</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Citrus_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Litchi -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Litchi">
+        <rdfs:label xml:lang="en">litchi</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Exotic_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Magnolia -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Magnolia">
+        <rdfs:label xml:lang="en">Magnolia
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Tree_flowers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Mandarin -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Mandarin">
+        <rdfs:label xml:lang="en">mandarin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Citrus_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Mango -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Mango">
+        <rdfs:label xml:lang="en">mango</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Exotic_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Marjoram -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Marjoram">
+        <rdfs:label xml:lang="en">Marjoram</rdfs:label>
+        <rdfs:label xml:lang="en">marjoram</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Aromatic_herbs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Mead -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Mead">
+        <rdfs:label xml:lang="en">mead</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Honey"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Meat -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Meat">
+        <rdfs:label xml:lang="en">meat</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Domestic_animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Meat_juice -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Meat_juice">
+        <rdfs:label xml:lang="en">meat juice</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Domestic_animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Melissa -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Melissa">
+        <rdfs:label xml:lang="en">melissa
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Infusion_plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Milk -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Milk">
+        <rdfs:label xml:lang="en">milk</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fermented"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Milk_chocolate -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Milk_chocolate">
+        <rdfs:label xml:lang="en">milk chocolate
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Cocoa_caramel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Mineral -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Mineral">
+        <rdfs:label xml:lang="en">mineral</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Mint -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Mint">
+        <rdfs:label xml:lang="en">mint</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Aromatic_herbs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Mocha -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Mocha">
+        <rdfs:label xml:lang="en">mocha</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Cocoa_caramel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Mock_orange -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Mock_orange">
+        <rdfs:label xml:lang="en">mock orange</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Shrub_flower"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Moist_soil -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Moist_soil">
+        <rdfs:label xml:lang="en">moist soil</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Undergrowth"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Mold -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Mold">
+        <rdfs:label xml:lang="en">mold</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Moist_soil"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Moldy -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Moldy">
+        <rdfs:label xml:lang="en">moldy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Mushroom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Mouse -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Mouse">
+        <rdfs:label xml:lang="en">mouse</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Domestic_animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Mushroom -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Mushroom">
+        <rdfs:label xml:lang="en">mushroom</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Undergrowth"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Musk -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Musk">
+        <rdfs:label xml:lang="en">musk</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Naphthalene -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Naphthalene">
+        <rdfs:label xml:lang="en">naphthalene</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Pharmaceutical_chemical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Nutmeg -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Nutmeg">
+        <rdfs:label xml:lang="en">nutmeg</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Oriental"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Nuts -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Nuts">
+        <rdfs:label xml:lang="en">nuts</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Inshell_dry_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Oak -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Oak">
+        <rdfs:label xml:lang="en">oak</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Woody"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Old_wood -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Old_wood">
+        <rdfs:label xml:lang="en">old wood</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Woody"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Orange_blossom -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Orange_blossom">
+        <rdfs:label xml:lang="en">Orange blossom</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Tree_flowers"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#pastry_cook"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Oregano -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Oregano">
+        <rdfs:label xml:lang="en">oregano</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Aromatic_herbs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Oriental -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Oriental">
+        <rdfs:label xml:lang="en">oriental</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Spicy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Oxidized -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Oxidized">
+        <rdfs:label xml:lang="en">Oxidized</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Chemical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Oxidized_apple -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Oxidized_apple">
+        <rdfs:label xml:lang="en">Oxidized apple
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Oxidized"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Paris_mushroom -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Paris_mushroom">
+        <rdfs:label xml:lang="en">paris mushroom</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Mushroom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Parsley -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Parsley">
+        <rdfs:label xml:lang="en">parsley</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Aromatic_herbs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Passion_fruits -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Passion_fruits">
+        <rdfs:label xml:lang="en">Passion fruit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Exotic_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Peach -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Peach">
+        <rdfs:label xml:lang="en">peach</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fresh_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Peanut -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Peanut">
+        <rdfs:label xml:lang="en">peanut</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Inshell_dry_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Pear -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Pear">
+        <rdfs:label xml:lang="en">pear</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fresh_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Peat_moss -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Peat_moss">
+        <rdfs:label xml:lang="en">peat moss</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Moist_soil"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Pencil -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Pencil">
+        <rdfs:label xml:lang="en">pencil</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Mineral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Peony -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Peony">
+        <rdfs:label xml:lang="en">peony</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Garden_flower"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Pepper -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Pepper">
+        <rdfs:label xml:lang="en">pepper</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Berries"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Pet -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Pet">
+        <rdfs:label xml:lang="en">pet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Domestic_animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Pharmaceutical_chemical -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Pharmaceutical_chemical">
+        <rdfs:label xml:lang="en">pharmaceutical chemical</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Chemical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Phenols -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Phenols">
+        <rdfs:label xml:lang="en">phenols</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Pharmaceutical_chemical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Pine -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Pine">
+        <rdfs:label xml:lang="en">pine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Woody"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Pineapple -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Pineapple">
+        <rdfs:label xml:lang="en">pineapple
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Exotic_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Pistachios -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Pistachios">
+        <rdfs:label xml:lang="en">pistachios</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Inshell_dry_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Plastic -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Plastic">
+        <rdfs:label xml:lang="en">plastic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Industrial_chemical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Plum -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Plum">
+        <rdfs:label xml:lang="en">plum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fresh_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Pollen -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Pollen">
+        <rdfs:label xml:lang="en">pollen</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Honey"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Potato -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Potato">
+        <rdfs:label xml:lang="en">Potato</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Oxidized"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Prune -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Prune">
+        <rdfs:label xml:lang="en">prune</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Dried_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Quince -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Quince">
+        <rdfs:label xml:lang="en">quince
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fresh_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Raspberry -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Raspberry">
+        <rdfs:label xml:lang="en">raspberry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fresh_red_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Red_fruits -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Red_fruits">
+        <rdfs:label xml:lang="en">red fruits</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Reduced -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Reduced">
+        <rdfs:label xml:lang="en">Reduced</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Oxidized"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Ripe_or_cooked_black_fruits -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Ripe_or_cooked_black_fruits">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Black_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Ripe_or_cooked_red_fruits -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Ripe_or_cooked_red_fruits">
+        <rdfs:label xml:lang="en">ripe or cooked red fruits
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Red_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Roasted -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Roasted">
+        <rdfs:label xml:lang="en">roasted</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Cocoa_caramel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Rose -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Rose">
+        <rdfs:label xml:lang="en">rose
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Shrub_flower"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Rosemary -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Rosemary">
+        <rdfs:label xml:lang="en">rosemary</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Aromatic_herbs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Rotten -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Rotten">
+        <rdfs:label xml:lang="en">rotten</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Moist_soil"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Rotten_egg -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Rotten_egg">
+        <rdfs:label xml:lang="en">Rotten egg</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Oxidized"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Rubber -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Rubber">
+        <rdfs:label xml:lang="en">rubber
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Industrial_chemical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Saffron -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Saffron">
+        <rdfs:label xml:lang="en">saffron</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Oriental"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Sage -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Sage">
+        <rdfs:label xml:lang="en">sage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Aromatic_herbs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Sandalwood -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Sandalwood">
+        <rdfs:label xml:lang="en">sandalwood</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Woody"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Sausage -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Sausage">
+        <rdfs:label xml:lang="en">sausage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Domestic_animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Sawdust -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Sawdust">
+        <rdfs:label xml:lang="en">sawdust
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Woody"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Shale -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Shale">
+        <rdfs:label xml:lang="en">shale</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Mineral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Shellfish -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Shellfish">
+        <rdfs:label xml:lang="en">shellfish
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Mineral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Shrub_flower -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Shrub_flower">
+        <rdfs:label xml:lang="en">shurb flower</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Floral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Shrubs -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Shrubs">
+        <rdfs:label xml:lang="en">shrubs</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Shrub_flower"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Sichuan -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Sichuan">
+        <rdfs:label xml:lang="en">sichuan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Berries"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Smoke -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Smoke">
+        <rdfs:label xml:lang="en">smoke</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Smoke_tobocco"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Smoke_tobocco -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Smoke_tobocco">
+        <rdfs:label xml:lang="en">smoke tobacco</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Empyreumatic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Soap -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Soap">
+        <rdfs:label xml:lang="en">soap</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fermented"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Solvent -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Solvent">
+        <rdfs:label xml:lang="en">solvent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Industrial_chemical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Soot -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Soot">
+        <rdfs:label xml:lang="en">soot</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Smoke_tobocco"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Spearmint -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Spearmint">
+        <rdfs:label xml:lang="en">spearmint</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Infusion_plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Spicy -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Spicy">
+        <rdfs:label xml:lang="en">spicy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Spicy_dessert -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Spicy_dessert">
+        <rdfs:label xml:lang="en">spices desserts</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Spicy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Spinach -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Spinach">
+        <rdfs:label xml:lang="en">spinach</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Green_vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Stitched -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Stitched">
+        <rdfs:label xml:lang="en">Stitched</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Oxidized"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Strawberry -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Strawberry">
+        <rdfs:label xml:lang="en">strawberry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fresh_red_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Sulfur -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Sulfur">
+        <rdfs:label xml:lang="en">sulfur</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Industrial_chemical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Tangerine -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Tangerine">
+        <rdfs:label xml:lang="en">tangerine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Citrus_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Tar -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Tar">
+        <rdfs:label xml:lang="en">tar</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Smoke_tobocco"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Tarragon -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Tarragon">
+        <rdfs:label xml:lang="en">tarragon</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Aromatic_herbs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Tea -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Tea">
+        <rdfs:label xml:lang="en">tea</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Dry_vegetal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Thyme -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Thyme">
+        <rdfs:label xml:lang="en">thyme</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Aromatic_herbs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Toast -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Toast">
+        <rdfs:label xml:lang="en">toast</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Smoke_tobocco"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Tobacco -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Tobacco">
+        <rdfs:label xml:lang="en">tobacco</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Smoke_tobocco"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Toffee -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Toffee">
+        <rdfs:label xml:lang="en">toffee</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Cocoa_caramel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Too_mature -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Too_mature">
+        <rdfs:label xml:lang="en">too mature black fruits</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Ripe_or_cooked_black_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Tree_flowers -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Tree_flowers">
+        <rdfs:label xml:lang="en">tree flowers</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Floral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Truffle -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Truffle">
+        <rdfs:label xml:lang="en">truffle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Mushroom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Turpentine -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Turpentine">
+        <rdfs:label xml:lang="en">turpentine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Industrial_chemical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Undergrowth -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Undergrowth">
+        <rdfs:label xml:lang="en">undergrowth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Vanilla -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Vanilla">
+        <rdfs:label xml:lang="en">vanilla
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Spicy_dessert"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Varnish -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Varnish">
+        <rdfs:label xml:lang="en">varnish</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Industrial_chemical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Vegetal -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Vegetal">
+        <rdfs:label xml:lang="en">vegetal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Verbena -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Verbena">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Infusion_plant"/>
+        <rdfs:comment>Verbena</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Vinegar -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Vinegar">
+        <rdfs:label xml:lang="en">Vinegar</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Oxidized"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Violet -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Violet">
+        <rdfs:label xml:lang="en">violet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Garden_flower"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Waxes -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Waxes">
+        <rdfs:label xml:lang="en">waxes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Honey"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Wet_dog -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Wet_dog">
+        <rdfs:label xml:lang="en">wet dog</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Domestic_animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Wet_grass -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Wet_grass">
+        <rdfs:label xml:lang="en">wet grass</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fresh_vegetal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#White_chocolate -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#White_chocolate">
+        <rdfs:label xml:lang="en">white chocolate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Cocoa_caramel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#White_flowers -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#White_flowers">
+        <rdfs:label xml:lang="en">white flowers</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Garden_flower"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#White_truffle -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#White_truffle">
+        <rdfs:label xml:lang="en">white truffle
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Mushroom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Wild_rose -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Wild_rose">
+        <rdfs:label xml:lang="en">wild rose
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Shrub_flower"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Woody -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Woody">
+        <rdfs:label xml:lang="en">woody</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#Yeast -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#Yeast">
+        <rdfs:label xml:lang="en">yeast</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fermented"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#biscuit -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#biscuit">
+        <rdfs:label xml:lang="en">biscuit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#pastry_cook"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#black_fruits_jam -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#black_fruits_jam">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Ripe_or_cooked_black_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#brioche -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#brioche">
+        <rdfs:label xml:lang="en">brioche</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#pastry_cook"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#cake -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#cake">
+        <rdfs:label xml:lang="en">cake</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#pastry_cook"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#cotton_candy -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#cotton_candy">
+        <rdfs:label xml:lang="en">cotton candy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#pastry_cook"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#fruits_compote -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#fruits_compote">
+        <rdfs:label xml:lang="en">fruits compote</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#ripe_or_cooked_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#fruits_jam -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#fruits_jam">
+        <rdfs:label xml:lang="en">fruits jam</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#ripe_or_cooked_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#glazed_chestnut -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#glazed_chestnut">
+        <rdfs:label xml:lang="en">glazed chestnut</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#pastry_cook"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#marshmallow -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#marshmallow">
+        <rdfs:label xml:lang="en">marshmallow</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#pastry_cook"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#orange -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#orange">
+        <rdfs:label xml:lang="en">orange</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Citrus_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#pastry -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#pastry">
+        <rdfs:label xml:lang="en">pastry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#pastry_cook"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#pastry_cook -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#pastry_cook">
+        <rdfs:label xml:lang="en">pastry cook</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#red_fruits_compote -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#red_fruits_compote">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Ripe_or_cooked_red_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#ripe_or_cooked_fruits -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#ripe_or_cooked_fruits">
+        <rdfs:label xml:lang="en">ripe or cooked fruits</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#sweat -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#sweat">
+        <rdfs:label xml:lang="en">sweat</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Domestic_animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#too_mature_fruits -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#too_mature_fruits">
+        <rdfs:label xml:lang="en">too mature fruits</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#ripe_or_cooked_fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1456566482.owl#too_mature_red_fruits -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1456566482.owl#too_mature_red_fruits">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1456566482.owl#Ripe_or_cooked_red_fruits"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

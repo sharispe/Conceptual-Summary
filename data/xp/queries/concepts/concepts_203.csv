@@ -1,0 +1,77 @@
+juges ; Terms ; Concepts
+1 ;  roasted ; roasted
+ ;  compote ; fruits compote
+ ;  prune ; prune
+ ;  rum ; alcohol
+ ;  orange  ; orange
+2 ; vegetal ; vegetal
+ ; currant ; currant
+ ;  fresh red fruit  ; fresh red fruits
+ ;  ripe raspberry ; ripe red fruits
+ ;  ripe raspberry ; cooked red fruits
+ ; amylic ; amylic
+ ;  citrus ; citrus fruits
+3 ;  milk ; milk
+ ;  raspberry ; raspberry
+ ;  strawberry ; strawberry
+ ;  currant ; currant
+ ;  pineapple ; pineapple
+ ;  grass ; grass
+ ;  lemon ; lemon
+ ;  coconut ; coconut
+ ;  malabar ; strawberry
+4 ;  toast ; toast
+ ;  empyreumatic ; empyreumatic
+ ;  vanilla ; vanilla
+ ;   licorice ; licorice
+ ;  spice ; spicy
+ ;  black fruit  ; black fruits
+5 ; fruity ; fruits
+ ;  pear ; fresh fruits
+ ;  banana ; banana
+ ;  plum ; plum
+ ;  bitter almond ; spices dessert
+ ;  thiols ; citrus fruits
+ ;  grapefruit ; grapefruit
+ ;  spicy ; spicy
+ ;  pepper ; pepper
+6 ; yellow fruit ; apricot
+ ;  apricot ; apricot
+ ;  whitefruits ; pear
+ ;  pear ; pear
+ ;  exotic fruits ; mango
+ ;  mango ; mango
+7 ; fresh red fruits ; fresh red fruits
+ ;  vegetal ; vegetal
+ ;  pepper ; pepper
+8 ; cherry ; cherry
+ ; kirsch cherry ; alcohol
+ ;  ; red fruits compote
+9 ;  red fruits ; red fruits
+ ;  flowers ; floral
+10 ;  fruity ; fruits
+ ;  peach ; peach
+ ;  exotic fruit ; exotic fruits
+ ;  fruit paste ;  fruits compote
+ ;  mango ; mango
+11 ;  fresh fruity ; fresh fruits
+ ;  black currant ; black currant
+ ;  amylic ; amylic
+ ;  fresh vegetal ; fresh vegetal
+12 ; amylic ; amylic
+ ;  banana ; banana
+ ;  woody ; woody
+13 ;  acetate ; industrial chemical
+ ;  amylic  ; amylic
+ ; alcohol ; alcohol
+ ;  fermentation ; fermented
+ ;  banana ; banana
+ ;  raspberry ; raspberry
+ ;   caramel  ; caramel
+14 ; blackcurrant ; black currant
+ ;  strawberry ; strawberry
+ ;  plum ; plum
+ ;  ivy ; fresh vegetal
+15 ; fruity ; fruits
+ ; blackcurrant cream  ; black fruits compote
+ ; cooked blackberries ; black fruits compote

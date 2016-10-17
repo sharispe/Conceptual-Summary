@@ -1,0 +1,65 @@
+juges ; terms ; Concepts
+J1 ; vanilla ; vanilla
+ ;  spicy ; spicy
+ ;  anise ; anise
+ ;  hazelnut  ; hazelnut
+J2 ; strawberry ; strawberry
+ ;  oxidized ; oxidized
+ ;  cherry ; cherry
+ ;  stonefruit ; fresh fruits
+J3 ; lemon ; lemon
+ ;  menthol ; spearmint
+ ;  rhubarb ; citrus fruits
+ ;  raspberry ; raspberry
+ ;  grass ; grass
+ ;  vanilla ; vanilla
+ ;  milk ; milk
+ ;  caramel  ; caramel
+J4 ;  fruit ; fruits
+ ;  vegetal  ; vegetal
+ ;  black currant  ; black currant
+J5 ; vegetal ;  vegetal 
+ ;  green pepper ; green pepper
+ ;  black currant ; black currant
+ ;  strawberry  ; strawberry
+J6 ; animal  ;  animal
+ ;  horse ; horse
+ ; spices ; spicy
+ ;  cherry ; cherry
+J7 ; black currant ; black currant
+ ;  licorice ; licorice
+ ;  vegetal  ; vegetal
+ ;  peppery ; pepper
+J8 ;  Cake  ; cake
+ ;  cutgrass  ; cut grass
+J9 ; strawberries ; strawberry
+ ; caramelized  cooked raspberries  ; red fruits jam
+ ;  ; caramel
+ ; caramelized cookedcherries ; red fruits jam
+ ;  ; caramel
+J10 ; reduces  ; reduced
+ ;  gas ; chemical
+ ;  fruit  ; fruits
+ ;   cookedfruit ; cooked fruits
+ ;   cookedfruit ; ripe fruits
+J11 ;  fresh cherry ; cherry
+ ;  fresh red fruit ; fresh red fruits
+ ;  amylic  ; amylic
+J12 ; pepper ; pepper
+ ;  green beans ; green vegetables
+J13 ;  caramel ; caramel
+ ;  dry vegetal ; dry vegetal
+ ;  dry laurel  ; dry vegetal
+ ;  cooked fruit ; ripe fruits
+ ;  cooked fruit ; cooked fruits
+ ;  plum ; plum
+ ;  spice ; spicy
+J14 ; raspberry ; raspberry
+ ;  cut grass ; cut grass
+ ;  plum ; plum
+ ;  peony  ; peony
+J15 ; moldy ; moldy
+ ;  mushrooms ;  mushroom
+ ;   cooked fruit  ; cooked fruits
+ ;   cooked fruit  ; ripe fruits
+ ; black currant ; black currant

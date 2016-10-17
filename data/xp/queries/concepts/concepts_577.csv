@@ -1,0 +1,60 @@
+juges ; terms ; Concepts
+J1 ;  lemon ; lemon
+ ;  animal ; animal
+J2 ; reduce ; reduced
+ ; vegetal ; vegetal
+J3 ; wax ; waxes
+ ;  pineapple ; pineapple
+ ;  fresh wood ; woody
+ ;  meatjuice ; meat
+ ;  cloves ; clove
+ ;  cinnamon ; cinnamon
+ ;  fresh citrus ; citrus fruits
+J4 ;  black fruits ; black fruits
+ ;  blueberry  ; blueberries
+J5 ; mineral  ; mineral 
+ ;  dryhay ; hay
+ ;  dust ; woody
+ ; cherry brandy ; cherry brandy
+ ;  anise ; anise
+ ;  menthol   ; spearmint
+J6 ; wood ; woody
+ ;  dry wood   ; woody
+ ;  milk ; milk
+ ;  butter ; inshell dry fruits
+ ;  black fruit  ; black fruits
+J7 ;  floral ; floral
+ ;   humus ; humus
+ ;  spice  ; spicy
+ ;  pepper ; pepper
+ ; vegetal ; vegetal
+J8 ;  oxidized ; oxidized
+ ;  redfruit ; red fruits
+ ;  humus  ; humus
+J9 ;  reduction ; reduced
+ ;  wetwood  ; woody
+ ;  meaty  ; meat
+ ;   fruit  ; fruits
+J10 ; reduces   ; reduced
+ ;  garlic ; fresh vegetal
+ ;  vegetal  ; vegetal
+ ;  fruit  ; fruits
+ ;  currant ; currant
+ ;  blueberry ; blueberries
+ ;  strawberry ; strawberry
+J11 ;  animal ;  animal
+ ;  wet dog ; wet dog
+ ;  redfruit compote ; red fruits compote
+J12 ; spice ; spicy
+ ;  camphor ; camphor
+ ;  burnt ; smoke
+ ;  licorice ; licorice
+ ;  ripe pepper  ; pepper
+J13 ;  hay ; hay
+ ;  cutgrass ; cut grass
+ ;  fruit  ; fruits
+J14 ; phenol  ; phenols
+ ;  pepper ; pepper
+ ;  dry vegetal ; dry vegetal
+ ;  prune  ; prune
+         j15 ; mushroom ;  mushroom

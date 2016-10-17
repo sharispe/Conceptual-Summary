@@ -1,0 +1,70 @@
+juges ; terms ; Concepts
+J1 ; vanilla ; vanilla
+ ;  tomato ; green vegetables
+ ;  caramel ; caramel
+ ;  alcohol ; alcohol
+ ;  caoutchou  ; plastic
+J2 ; undergrowth ; undergrowth
+ ; vegetal ; vegetal
+ ;  spice  ; spicy
+J3 ; acetic ; vinegar
+ ;  moldy ; moldy
+ ;  earthy ; damp earth
+ ;  alcohol ; alcohol
+ ;  coffee ; coffee
+ ;  burnt  ; smoke
+J4 ;  red fruit ; red fruits
+ ;  raspberry ; raspberry
+ ;  floral ; floral
+J5 ; cooked fruit ; ripe fruits
+ ; cooked fruit ; cooked fruits
+ ;  prune ; prune
+ ;  cherry brandy ; cherry brandy
+ ;  dryvegetal ; dry vegetal
+ ;  hay ; hay
+ ;  tobacco ; tobacco
+ ;  thyme  ; thyme
+J6 ;  cookedfruit ; ripe fruits
+ ;  cookedfruit ; cooked fruits
+ ;  cookedonions ; vegetal
+ ;  nuts ; nuts
+ ;  cooked black fruit  ; ripe black fruits
+ ;  cooked black fruit  ; cooked black fruits
+ ;  dry fruits ; prune
+ ;  prune ; prune
+J7 ;  floral ; floral
+ ;   black currant ; black currant
+ ;  caramel ; caramel
+J8 ; floral ; floral
+ ;  lilac ; lilac
+ ;  chocolate ; black chocolate
+J9 ;  black fruits ; black fruits
+ ;  blackcurrant paste  ; black fruits compote
+ ;  dry vegetal  ; dry vegetal
+ ;  fern ; floral
+ ; blackberry paste ; black fruits compote
+J10 ; cooked fruit ; black fruits compote
+ ;  coffee  ; coffee
+ ;  Burnt ; smoke
+ ;  licorice ; licorice
+ ;  toasted ; toast
+ ;  toast ; toast
+J11 ;  milk ; milk
+ ;  black currant ; black currant
+J12 ; vegetal ; vegetal
+ ;  green pepper ; green pepper
+J13 ; cooked fruit ; ripe or cooked fruits
+ ;  blackberry ; blackberries
+ ;  plum ; plum
+ ;  amylic  ; amylic
+J14 ; phenol  ; phenols
+ ;  hay ; hay
+ ;  fig ; fresh fruits
+J15 ; cooked red berries  ; ripe red fruits
+ ; cooked red berries  ; cooked red fruits 
+ ;  black fruits ; black fruits
+ ;  black currant ; black currant
+ ;  black cherry ; blackberries
+ ;  spicy  ; spicy
+ ; roasted  ; roasted
+ ;  fruit ; fruits

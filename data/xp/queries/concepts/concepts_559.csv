@@ -1,0 +1,67 @@
+juges ; terms ; Concepts
+J1 ; citrus ; citrus fruits
+ ;  black currant ; black currant
+ ;  mint ; mint
+ ;  moldy  ; moldy
+J2 ;  fresh red fruit ; fresh red fruits
+ ;  coffee ; coffee
+ ;  smoky ; smoke
+J3 ;  eucalyptus ; eucalyptus
+ ;  menthol ; spearmint
+ ;  cardamom ; cardamom
+ ;  caraway ; cumin
+ ;  pepper ; pepper
+ ;  candied citrus ; citrus fruits
+ ;  ginger  ; ginger
+J4 ;  redfruit ; red fruits
+ ;  cherry ; cherry
+ ;  alcohol ; alcohol
+J5 ; chemical ; chemical
+ ;  metal ; industrial chemical
+ ;  iodine ; iodine
+ ;  bitter almonds ; spices dessert
+ ;  cherry brandy ; cherry brandy
+ ; oxidized ; oxidized
+J6 ; vegetal ; vegetal
+ ;  aromatic herbs ; aromatic herbs
+ ;  spice ; spicy
+ ;   anise ; anise
+ ;  floral ; floral
+ ;  lavender ; lavender
+ ; black fruit ; black fruits
+J7 ; floral ; floral
+ ;  peony ; peony
+ ;  fresh grass ; grass
+ ;  smoke ; smoke
+ ;  licorice ; licorice
+ ;  soot ; smoke
+ ;  empyreumatic  ; empyreumatic
+ ;  fresh fruit ; fresh fruits
+ ;  berries ; berries
+ ;  cinnamon  ; cinnamon
+J8 ; blackcurrant buds ; ripe black fruits
+ ; blackcurrant buds ; cooked black fruits
+J10 ; chocolate ; black chocolate
+ ;  coffee ; coffee
+ ;  mocha ; mocha
+ ;  cherry brandy  ; cherry brandy
+ ; spices ; spicy
+ ;  thyme ; thyme
+ ;  rosemary  ; rosemary
+J11 ; licorice ; licorice
+ ;  cooked red fruit ; cooked red fruits
+ ;  cooked red fruit ; ripe red fruits
+ ; spice   ; spicy
+J12 ; blackfruit ; black fruits
+ ;  leather ; leather
+J13 ;  floral ; floral
+ ;  violet ; violet
+ ;  fresh red fruit ; fresh red fruits
+ ;  cherry  ; cherry
+J14 ;  blackcurrant cream ; black fruits compote
+ ;  sourcandy (bonbons acidulés) ; citrus fruits
+ ; violet ; violet
+ ;  salad  ; green vegetables
+J15 ; currant ; currant
+ ;  ascecent ; fermented
+ ;  fresh red fruit ; fresh red fruits

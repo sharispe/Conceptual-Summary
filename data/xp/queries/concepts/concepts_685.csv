@@ -1,0 +1,72 @@
+juges ; terms ; Concepts
+J1 ;   red fruit ; red fruits
+ ;  floral  ; floral
+J2 ; oxidized ; oxidized
+ ;  brandy ; ripe fruits
+ ;  brandy ; cooked  fruits
+ ;  spice ; spicy
+ ;   vegetal ; vegetal
+J3 ; orange ; orange
+ ;  caramel ; caramel
+ ;  alcohol ; alcohol
+ ;  milk ; milk
+ ;  paper ; vegetal
+ ;  Grand Marnier  ; orange
+J4 ; floral ; floral
+ ;  blackcurrant buds ; ripe black fruits
+ ;  blackcurrant buds ; cooked black fruits
+ ;  red berries ; fresh red fruits
+ ;  candy cherry  ; cherry
+J5 ; undergrowth ; undergrowth
+ ;  tobacco ; tobacco
+ ;  burnt wood ; smoke
+ ;  bitter almond ; spices dessert
+ ;  dust ; woody
+ ;  paper ; vegetal
+ ; vegetal ; vegetal
+ ;  pepper ; pepper
+ ;  nut ; dried almonds
+ ;  type almond  ; 
+J7 ;  fresh fruit ; fresh fruits
+ ;  black currant ; black currant
+ ;  raspberry ; raspberry
+ ;  vegetal  ; vegetal
+ ; mint ; mint
+ ;  cutgrass ; cut grass
+ ;  pepper ; pepper
+J8 ; earthy ; damp earth
+ ;  chocolate ; black chocolate
+ ;  blackberry ; blackberries
+ ;  licorice  ; licorice
+J9 ;   redfruits  ; red fruits
+ ;   floral   ; floral
+ ; iris ; iris
+ ; violet ; violet
+J10 ;  vegetal ; vegetal
+ ;  ratatouille ; green vegetables
+ ;  confit pepper ; green vegetables
+ ;  chocolate  ; black chocolate
+ ;   citrus ; citrus fruits
+ ;  lemon ; lemon
+J11 ;  fresh vegetal ; fresh vegetal
+ ;  black currant ; black currant
+ ;  raspberry ; raspberry
+ ;  floral  ; floral
+J12 ; vegetal ; vegetal
+ ;  spicy ; spicy
+J13 ;  green pepper ; green pepper
+ ;  green bean ; green vegetables
+ ;  cooked fruit ; cooked  fruits
+ ;  cooked fruit ; ripe fruits
+ ;  caramel  ; caramel
+J14 ; black currant ; black currant
+ ;  cherry ; cherry
+ ;  plum ; plum
+ ;  peony ; peony
+ ;  dry vegetal ; dry vegetal
+J15 ; fresh vegetal ; fresh vegetal
+ ;  fresh fruit ; fresh fruits
+ ;  thiol ; citrus fruits
+ ;  box wood ; woody
+ ;  blackcurrant buds ; ripe black fruits
+ ;  blackcurrant buds ; cooked black fruits

@@ -1,0 +1,73 @@
+juges ; terms ; Concepts
+J1 ; cooked fruit ; ripe fruits
+ ; cooked fruit ; cooked fruits
+ ;  prune ; prune
+ ;  mushroom  ;  mushroom
+J2 ; animal  ;  animal
+ ;  black fruit ; black fruits
+ ;  spicy ; spicy
+J3 ; iodine ; iodine
+ ;  meat juice ; meat
+ ;  tar ; tar
+ ;  mushroom ;  mushroom
+ ;  earthy ; damp earth
+ ;  smoke ; smoke
+ ;  beets ; green vegetables
+ ;  cherry  ; cherry
+ ;  acetic  ; vinegar
+J4 ;  dry fruits ; dried fruits
+ ; animal ;  animal
+ ;  spices  ; spicy
+J5 ; ethylphenol ; phenols
+ ;  animal ;  animal
+ ;  oxidized ; oxidized
+ ;  plums ; plum
+ ;  bitter almond ; spices dessert
+ ;  cherry brandy ; cherry brandy
+ ;  vanilla  ; vanilla
+J6 ; black fruit ; black fruits
+ ; blackberry ; blackberries
+ ;  red fruits ; red fruits
+ ; strawberry ; strawberry
+ ; spicy ; spicy
+J7 ;  compote ; fruits compote
+ ;  jam ; fruits jam
+ ;  vegetal ;  vegetal 
+J8 ; floral ; floral
+ ;  red fruit ; red fruits
+ ;  blueberry  ; blueberries
+J9 ; leather ; leather
+ ;  dry vegetal ; dry vegetal
+ ;   tea  ; tea
+ ;  red fruits  ; red fruits
+J10 ;  green tea ; green vegetables
+ ;  candied fruit ; ripe fruits
+ ;  candied fruit ; cooked fruits
+ ;  dry apricot  ; dried apricots
+ ;  quince ; quince
+ ;  exotic fruit ; exotic fruits
+ ;  pineapple ; pineapple
+ ;  mango ; mango
+J11 ; vegetal ;  vegetal 
+ ;  old wood  ; woody
+ ; smoke ; smoke
+J12 ; raspberry ; raspberry
+ ;  passion fruit ; passion fruit
+ ;  mango ; mango
+J13 ;  prunes ; prune
+ ;  dry fruits  ; dried fruits
+ ;  brandy ; ripe or cooked fruits
+ ;  cherry ; cherry
+ ;  black currant   ; black currant
+J14 ; fig ; fresh fruits
+ ;  strawberry ; strawberry
+ ;  pepper ; pepper
+ ;  blackolive ; green vegetables
+ ;  caramel ; caramel
+ ;  coffee ; coffee
+ ;  cloves  ; clove
+J15 ; fennel  ; fennel
+ ;  vegetal ;  vegetal 
+ ;  vegetal ;  vegetal 
+ ;  fresh fruit ; fresh fruits
+ ;  thiol ; citrus fruits

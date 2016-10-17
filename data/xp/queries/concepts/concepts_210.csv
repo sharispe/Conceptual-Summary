@@ -1,0 +1,65 @@
+juges ; terms ; Concepts
+J1 ; citrus ; citrus fruits
+ ; lemon ; lemon
+ ; laurel ; laurel
+J2 ; vegetal ; vegetal
+ ; lime ; lime
+ ; dry grass ; dry grass
+ ; spice ; spicy
+J3 ; citrus ; citrus fruits
+ ; rhubarb ; citrus fruits
+ ; blackcurrant ; black currant
+ ; strawberry ; strawberry
+ ; milk ; milk
+ ; lemon ; lemon
+ ; bergamot ; bergamot
+J4 ; fresh fruits ; fresh fruits
+ ; amylic ; amylic
+ ; floral ; floral
+ ; peony ; peony
+ ; spices ; spicy
+J5 ; herbaceous ; herbaceous
+ ; greenpepper ; pepper
+ ; pyrazine ; pepper
+ ; strawberry ; strawberry
+ ; coffee ; coffee
+J6 ; floral ; floral
+ ; geranium ; garden flower
+ ; vegetal ; vegetal
+ ; celery ; green vegetables
+ ; woody ; woody
+ ; dry woody ; woody
+    J7 ; red fruits ; red fruits
+J8 ; cream of blackcurrant ; black fruits compote
+ ; tar ; tar
+ ; hay ; hay
+J9 ; smoky ; smoke
+ ; vegetal ; vegetal
+ ; kirchcherry ; alcohol
+ ;  ; red fruits compote
+J10 ; cooked fruits ; ripe fruits
+ ; cooked fruits ; cooked fruits
+ ; cooked vegetal ; vegetal
+ ; ratatouille ; green vegetables
+ ; licorice ; licorice
+ ; fresh citrus ; citrus fruits
+J11 ; vegetal ; vegetal
+ ; hay ; hay
+ ; cut grass ; cut grass
+ ; red fruits ; red fruits
+ ; currant ; currant
+J12 ; pepper ; pepper
+ ; strawberry ; strawberry
+J13 ; fresh vegetal ; fresh vegetal
+ ; green pepper ; green pepper
+ ; spicy ; spicy
+ ; pepper ; pepper
+J14 ; raspberry ; raspberry
+ ; black currant ; black currant
+ ; plum ; plum
+ ; menthol ; spearmint
+J15 ; red fruits ; red fruits
+ ; vegetal ; vegetal
+ ; blackcurrant buds ; ripe black fruits
+ ; blackcurrant buds ; cooked black fruits
+ ;  woody ; woody

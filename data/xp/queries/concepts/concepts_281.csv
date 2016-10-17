@@ -1,0 +1,73 @@
+juges ; terms ; Concepts
+J1 ; spicy ; spicy
+ ;  laurel ; laurel
+ ;  vanilla ; vanilla
+ ;  curry ; curry
+ ;  prune  ; prune
+J2 ; spicy ; spicy
+ ;  floral  ; floral
+ ;  roasted ; roasted
+ ;   exotic  ; exotic fruits
+J3 ; peach ; peach
+ ;  apricots ; apricot
+ ;  milk ; milk
+ ;  caramel ; caramel
+ ;  vanilla ; vanilla
+J4 ;  vegetal ; vegetal
+ ;  blackcurrant buds ; ripe black fruits
+ ;  blackcurrant buds ; cooked black fruits
+ ;  pepper ; pepper
+ ;  black fruit  ; black fruits
+J5 ; milk ; milk
+ ;  lactic  acid ; lactic acid
+ ;  caramel ; caramel
+ ;  vanilla ; vanilla
+ ;  spicy ; spicy
+ ;  thyme ; thyme
+ ;  pepper  ; pepper
+J6 ;  black fruits ; black fruits
+ ;  blackcurrant ; black currant
+J7 ; fresh red fruit ; fresh red fruits
+ ;  raspberry ; raspberry
+ ;  cherry ; cherry
+ ;  vegetal  ; vegetal
+ ;  smoke ; smoke
+J8 ; polenta ; pastry
+ ;  semolina ; pastry
+ ;  cake  ; cake
+J9 ; cooked red fruit ; ripe red fruits
+ ; cooked red fruit ; cooked red fruits
+ ;  cooked black fruits  ; ripe black fruits
+ ;  cooked black fruits  ; cooked black fruits
+ ;  animal  ; animal
+ ; mineral ; mineral
+J10 ; cooked fruit  ; ripe fruits
+ ; cooked fruit  ; cooked fruits
+ ;  red pepper ; green vegetables
+ ; vegetal ; vegetal
+ ;  grass ; grass
+ ;  floral ; floral
+ ;  iris ; iris
+J11 ;  milk ; milk
+ ;  black cherry ; black cherry
+ ;  grilled ; roasted
+J12 ; vegetal ; vegetal
+ ;  reduced ; reduced
+ ;  pepper  ; pepper
+J13 ; ripefruit ; ripe  fruits
+ ; ripefruit ; cooked fruits
+ ;  black currant ; black currant
+ ;  fresh fruit ; fruits
+ ;  citrus ; citrus fruits
+ ;  grapefruit ; grapefruit
+ ;  fresh vegetal  ; fresh vegetal
+J14 ; raspberry ; raspberry
+ ;  dry vegetal ; dry vegetal
+ ;  milk ; milk
+ ;  strawberry ; strawberry
+ ;  pepper ; pepper
+J15 ;  red fruit ; red fruits
+ ;  vegetal ; vegetal
+ ;  dryhay ; hay
+ ;  asparagus ; asparagus
+ ;  herbaceous  ; herbaceous

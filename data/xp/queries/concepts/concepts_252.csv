@@ -1,0 +1,71 @@
+juges ; terms ; Concepts
+J1 ; vegetal ; vegetal
+ ;  menthol ; spearmint
+ ;  citrus ; citrus fruits
+J2 ;  blackfruit ; black fruits
+ ;  spice ; spicy
+ ;  exotic ; exotic fruits
+ ;  peach ; peach
+ ;  floral ; floral
+J3 ; grapefruit ; grapefruit
+ ;  lemon ; lemon
+ ;  rhubarb ; citrus fruits
+ ;  cardamom ; cardamom
+ ; ginger ; ginger
+ ;  acetic ; vinegar
+ ;  menthol ; spearmint
+J4 ;  vegetal ; vegetal
+ ;  reduced ; reduced
+ ;  animal  ; animal
+J5 ; floral ; floral
+ ;  pink ; rose
+ ;  peony ; peony
+ ;  citrus ; citrus fruits
+ ;  thiols ; citrus fruits
+ ; kumquat ; orange
+ ;  grapefruit  ; grapefruit
+J6 ; strawberries ; strawberry
+ ;  redfruits ; red fruits
+ ;  exoticfruits ; exotic fruits
+ ;  passionfruit ; passion fruit
+ ;  mango ; mango
+ ;  pink ; rose
+ ;  citrus ; citrus fruits
+ ;  grapefruit ; grapefruit
+ ;   floral ; floral
+J7 ;  redfruit ; red fruits
+ ;  blackcurrant ; black currant
+ ;  cherry ; cherry
+ ;  floral ; floral
+ ;  spice ; spicy
+          J8 ; fresh blackberrie ; blackberries
+J9 ; fresh redfruits  ; fresh red fruits
+ ; grapefruit ; grapefruit
+ ;  English candy ; english candies
+ ;  amylic   ; amylic
+J10 ; rhubarb  ; citrus fruits
+ ; vegetal ; vegetal
+ ; fresh fruit ; fresh fruits
+ ;  sweat ; sweat
+ ;  toasted  ; roasted
+ ; caramel  ; caramel
+J11 ;  fresh grass ; grass
+ ;  floral ; floral
+ ;  green apple ; apple
+ ;  redfruit ; red fruits
+J12 ; pepper  ; pepper
+ ;  beans ; green vegetables
+ ;  varnishes ; varnish
+J13 ;  redfruit ; red fruits
+ ;   blackcurrant ; black currant
+ ;  raspberry ; raspberry
+ ;  amylic ; amylic
+J14 ; raspberry  ; raspberry
+ ;  pepper ; spicy
+ ;  violet ; violet
+ ;  cutgrass ; cut grass
+J15 ; very vegetal ; vegetal
+ ;  freshvegetal ; fresh vegetal
+ ;  redfruit ; red fruits
+ ;  wood ; woody
+ ;  thiol ; citrus fruits

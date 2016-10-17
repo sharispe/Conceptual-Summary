@@ -1,0 +1,59 @@
+juges ; terms ; Concepts
+J1 ; raspberry syrup ; red fruits compote
+ ;  blackcurrant syrup ; black fruits compote
+J2 ;  Black fruit ; black fruits
+ ;  prune ; prune
+ ;  strawberry compote ; red fruits compote
+ ;  cinnamon ; cinnamon
+ ;  peach ; peach
+ ;  exotic fruits  ; exotic fruits
+J3 ; grapefruit ; grapefruit
+ ;  Eucalytus ; eucalyptus
+ ;  cardamom ; cardamom
+ ;  pepper ; pepper
+ ;  meat juice ; meat
+ ;  acetic ; vinegar
+J4 ;  floral ; floral
+ ;  peony ; peony
+ ; vegetal ; vegetal
+J5 ; fruit ; fruits
+ ;  citrus ; citrus fruits
+ ;  kumquat ; citrus fruits
+ ;  grapefruit  ; grapefruit
+ ;  rhubarb ; citrus fruits
+ ;  thiols ; citrus fruits
+J6 ; exotic fruit ; exotic fruits
+ ;  litchi ; litchi
+ ;  floral ; floral
+ ;  jasmine ; jasmine
+J7 ; reduction ; reduced
+ ; black currant ; black currant
+ ;  rose ; rose
+J8 ; fresh black currant ; black currant
+J9 ; reduction  ; reduced
+ ;  meaty ; meat
+ ;   redfruit  ; red fruits
+J10 ;  mushroom  ;  mushroom
+ ;  animal ;  animal
+J11 ;  red fruits ; red fruits
+ ;  black currant ; black currant
+ ;  vegetal ; vegetal
+ ;  milky ; milk
+J12 ;  undergrowth ;  undergrowth
+ ;  mushroom ;  mushroom
+ ;  drywood  ; woody
+J13 ;  sweat ; sweat
+ ;  vegetal ; vegetal
+ ;  blackcurrant buds ; ripe black fruits
+ ;  blackcurrant buds ; cooked black fruits
+J14 ; prune ; prune
+ ;  fig ; fresh fruits
+ ;  violet ; violet
+ ;  raspberry candy ; ripe red fruits
+ ;  raspberry candy ; cooked red fruits
+ ;  black currant ; black currant
+ ;   blackcurrant candy ; ripe black fruits
+ ;   blackcurrant candy ; cooked black fruits
+ ;  cutgrass  ; cut grass
+J15 ;  red fruits ; red fruits
+ ;  pharmaceutical ;  mushroom

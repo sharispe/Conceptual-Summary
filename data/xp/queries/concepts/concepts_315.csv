@@ -1,0 +1,77 @@
+juges ; terms ; Concepts
+J1 ; caramel ; caramel
+ ;  lactic ; lactic acid
+ ;  almond ; dried almonds
+ ;  cherry ; cherry
+ ;  vanilla  ; vanilla
+J2 ; redfruity ; red fruits
+ ;  smoked vegetal    ; smoke
+J3 ; raspberry ; raspberry
+ ;  cherry ; cherry
+ ;  tar ; tar
+ ;  sulfur ; sulfur
+ ;  ivy ; garden flower
+ ;  pepper  ; pepper
+J4 ;  amylic  ; amylic
+ ;  strawberry ; strawberry
+ ;  peony ; peony
+J5 ; black fruit ; black fruits
+ ;  black berry ; blackberries
+ ;  blueberry ; blueberries
+ ;  black currant ; black currant
+ ;  lactic ; lactic acid
+ ;  plum ; plum
+ ;  hay ; hay
+ ;  thyme  ; thyme
+J6 ; black fruit ; black fruits
+ ;  blackberries ;  blackberries
+ ;  spice ; spicy
+ ;  cinnamon ; cinnamon
+ ;  white fruits ; fresh fruits
+ ;  apple ; apple
+J7 ;  fruity ; fruits
+ ;  cherry ; cherry
+ ;  raspberry ; raspberry
+ ;  floral ; floral
+ ;  peony ; peony
+ ;  pepper ; pepper
+J8 ; blackberry ; blackberries
+ ;  Cake  ; cake
+ ; pepper  ; spicy
+J9 ;  black fruit   ; black fruits
+ ; mushrooms ; mushroom
+J10 ; vegetal ; vegetal
+ ;  fresh grass ; grass
+ ;  green pepper ; green pepper
+ ;  floral ; floral
+ ;  Milk  ; milk
+ ; chocolate milk ; milk chocolate
+J11 ;  milk ; milk
+ ;  fresh wood ; woody
+ ;  cooked red fruit   ; cooked red fruits
+ ;  cooked red fruit   ; ripe red fruits
+J12 ; wood ; woody
+ ;   vanilla  ; vanilla
+ ;  fruity  ; fruits
+ ; vegetal  ; vegetal
+J13 ;  red fruits ; red fruits
+ ;  cooked fruit ; fruits compote
+ ;  jam ; fruits jam
+ ;  plum ; plum
+ ;  black currant ; black currant
+ ;  amylic  ; amylic
+ ;  raspberry ; raspberry
+J14 ; prune ; prune
+ ;  fig ; fresh fruits
+ ;  raspberry brandy ; ripe red fruits
+ ;  raspberry brandy ; cooked red fruits
+ ;  tea ; tea
+ ;  drygrass  ; dry grass
+J15 ; blackcurrant cream ; black fruits compote
+ ;   red fruits ; red fruits
+ ;  cooked red berries ; ripe red fruits
+ ;  cooked red berries ; cooked red fruits
+ ;  cherries brandy  ; cherry brandy
+ ;  vegetal notes ; vegetal
+ ;  cutgrass ; cut grass
+ ;  wetgrass ; wet grass

@@ -1,0 +1,65 @@
+juges ; terms ; Concepts
+j1 ; alcohol ; alcohol
+ ;  vanilla ; vanilla
+J2 ;  grapefruit ; grapefruit
+ ;  lemon ; lemon
+ ;  zest orange ; orange
+ ; exotic fruit ; exotic fruits
+J3 ;  apple compote ; fruits compote
+ ;  milk ; milk
+ ;  caramel ; caramel
+ ;  egg ; pastry cook
+J4 ;  cooked fruit ; ripe fruits
+ ;  cooked fruit ; cooked fruits
+ ;  prunes ; prune
+ ;  caramel  ; caramel
+J5  ; buttered ; inshell dry fruits
+ ; actic ; lactic acid
+ ;  plum ; plum
+ ;  hay ; hay
+ ;  tobacco ; tobacco
+ ;  black fruit  ; black fruits
+ ;  black currant ; black currant
+ ;  blackberry ; blackberries
+ ;  red currant ; currant
+J6 ;  watery ; moist soil
+ ; floral ; floral
+ ;  redfruit  ; red fruits
+J7 ;  floral ; floral
+ ;  white flowers ; white flowers
+ ;  fruit ; fruits
+J8 ;  milk ; milk
+ ;  earthy ; damp earth
+J9 ; reduction ; reduced
+ ;  meaty ; meat
+ ;  wood ; woody
+ ;  leather ; leather
+ ;  animal ; animal
+J10 ;  reduced ; reduced
+ ;  coffee  ; coffee
+ ;   reduction ; reduced
+ ; hay ; hay
+ ;  blackfruits ; black fruits
+J11 ;  cherry ; cherry
+ ;  blackcurrant ; black currant
+ ;  amylic ; amylic
+J12 ; strawberry ; strawberry
+ ;  greenbean ; green vegetables
+ ;  vegetal  ; vegetal
+J13 ;  smoked ; smoke
+ ;  grilled ; roasted
+ ;  empyreumatic ; roasted
+ ;  fresh fruit ; fresh fruits
+ ;  amylic ; amylic
+ ;  raspberry ; raspberry
+ ;  banana ; banana
+J14 ; prune ; prune
+ ;  dry grass ; dry grass
+ ;  raspberry brandy ; ripe red fruits
+ ;  raspberry brandy ; cooked red fruits
+ ;  lime  ; lime
+J15 ; fresh fruit ; fresh fruits
+ ;  red fruit ; red fruits
+ ;  strawberry ; strawberry
+ ;  red cherry ; cherry
+ ;  herbaceous ; herbaceous

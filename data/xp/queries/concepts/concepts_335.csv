@@ -1,0 +1,61 @@
+juges ; terms ; Concepts
+J1 ;  lemon ; lemon
+ ;  floral ; floral
+ ;  strawberry  ; strawberry
+J2 ; grapefruit ; grapefruit
+ ;  vegetal ; vegetal
+ ;  currant ; currant
+ ;  smoked ; smoke
+J3 ;  acetic ; vinegar
+ ;  earthy ; damp earth
+ ;  brandy ; ripe fruits
+ ;  brandy ; cooked fruits
+ ;  tar ; tar
+ ;  potato  ; potato
+J4 ;  amylic ; amylic
+ ;  redfruits ; red fruits
+ ;  strawberry ; strawberry
+ ;  vegetal  ; vegetal
+J5 ; prune ; prune
+ ;  plumbrandy ; ripe fruits
+ ;  plumbrandy ; cooked fruits
+ ;  spicy ; spicy
+ ;  pepper  ; pepper
+J6 ;  licorice ; licorice
+ ;  redfruit  ; red fruits
+ ; spice ; spicy
+J7 ;  anis ; anise
+ ; redfruit ; red fruits
+ ;  berries ; berries
+ ;  raspberry ; raspberry
+ ;   spices ; spicy
+J8 ; cookedblackcurrant  ; ripe black fruits
+ ; cookedblackcurrant  ; cooked black fruits
+ ;  milk ; milk
+J9 ; reduction ; reduced
+ ; meaty ; meat
+ ; fresh redfruits ; fresh red fruits
+ ; solvent ; solvent
+J10 ; caramelised apple ; caramel
+ ;  butter ; inshell dry fruits
+ ;  milk  ; milk
+ ;  black fruit yoghurt ; black fruits
+ ;  ;  fermented
+ ;  blueberry ; blueberries
+J11 ;  black currant ; black currant
+ ;  amylic ; amylic
+J12 ; amylic ; amylic
+ ;  banana  ; banana
+ ;  strawberry  ; strawberry
+J13 ;  amylic ; amylic
+ ;  dry fruits ; dried fruits
+ ;  nuts  ; nuts
+J14 ; raspberry ; raspberry
+ ;  violet ; violet
+ ;  drygrass ; dry grass
+ ;  plum  ; plum
+J15 ; red fruits ; red fruits
+ ;  fruit ; fruits
+ ;  strawberry ; strawberry
+ ;  black currant ; black currant
+ ;  spicy ; spicy

@@ -1,0 +1,59 @@
+juges ; terms ; Concepts
+J1 ;  vanilla ; vanilla
+J2 ;  smoky ; smoke
+ ;  citrus ; citrus fruits
+ ;  blackberry ; blackberries
+J3 ; chalk ; chalk
+ ;  paper ; vegetal
+ ;  earthy ; damp earth
+ ;  tar ; tar
+ ;  gentian ; floral
+J4 ; currants ; currant
+ ;  floral ; floral
+ ;  floral  ; floral
+ ;  pepper  ; pepper
+J5 ; spicy ; spicy
+ ;  thyme ; thyme
+ ;  garrigue ; vegetal
+ ;  vegetal ; vegetal
+ ;  red pepper ; green vegetables
+ ;  pyrazines  ; green vegetables
+ ;  blackfruit ; black fruits
+J6 ; white fruit ; fresh fruits
+ ;  pear ; pear
+ ; banana ; banana
+ ;  exotic fruits   ; banana
+ ; leather  ; leather
+ ;   animal ; leather
+J5 ;  redfruits ; red fruits
+ ; amylic  ; amylic
+ ;  vegetal ; vegetal
+ ;  fresh grass ; grass
+ ; smoky ; smoke
+J8 ; red fruits ; red fruits
+J9 ; red fruits ; red fruits
+ ; reduction ; reduced
+J10 ; chalk   ; chalk
+ ; fresh fruits ; fresh fruits
+ ;  strawberry ; strawberry
+ ;  Raspberry ; raspberry
+ ;  vegetal ; vegetal
+ ;  pepper ; pepper
+J11 ; fresh vegetal ; fresh vegetal
+ ;  blackcurrant buds ;  cooked black fruits
+ ;  blackcurrant buds ; ripe black fruits
+ ; grilled ; roasted
+J12 ; vegetal ; vegetal
+ ; green bean ; green vegetables
+ ; red fruits ; red fruits
+J13 ;  fresh fruit ; fresh fruits
+ ;  blackcurrant syrup ; ripe black fruits
+ ;  blackcurrant syrup ; cooked black fruits
+ ;  raspberry ; raspberry
+ ;  fresh vegetal  ; fresh vegetal
+J14 ; plum ; plum
+ ;  dry grass ; dry grass
+ ;  phenol  ; phenols
+J15 ; vanilla ; vanilla
+ ; fruits ; fruits
+ ; smoky ; smoke
