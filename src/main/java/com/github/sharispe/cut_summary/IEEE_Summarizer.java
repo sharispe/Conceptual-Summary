@@ -33,13 +33,20 @@ public class IEEE_Summarizer {
     private final static double MIN_NUMBER_OBSERVATIONS_IMPLICIT = 2;
     private final static double ALPHA_DELTA_D = 1.0;
     private final static double ALPHA_LAMBDA = 1.0;
+    private final static double p_delta_e_minus = 1;
+    private final static double p_delta_p_plus  = 0.5;
+    private final static double p_delta_p_minus = 0.5;
+    private final static double p_delta_d = 1;
 
     final SM_Engine engine;
     final G onto;
 
     private Set<URI> descriptorsInEntries;
-    private Map<URI, Double> observations;
+    
+    private int total_observations = 0;
+    private Map<URI, Double> observations; 
     private Map<URI, Double> observations_with_indirect;
+    private Map<URI, Double> observations_4computing_plausibility;
     private Map<Set<URI>, Double> summary_scores;
     private Set<Set<URI>> summaries;
 
@@ -66,8 +73,11 @@ public class IEEE_Summarizer {
         observations = new HashMap();
         for (Entry e : entries) {
             observations.put(e.descriptor, e.weight);
+            total_observations += e.weight;
+            
             descriptorsInEntries.add(e.descriptor);
         }
+        System.out.println("Total observations: "+total_observations);
 
         System.out.println("Observations (Explicit, i.e. focal) ------------------");
         for (URI descriptor : observations.keySet()) {
@@ -86,6 +96,23 @@ public class IEEE_Summarizer {
             }
             observations_with_indirect.put(x, owi);
             System.out.println(x + "\t" + owi);
+        }
+        
+        System.out.println("Propagate observations (to compute Plausibility) ------------------");
+        observations_4computing_plausibility = new HashMap();
+         for (URI x : engine.getClasses()) {
+            
+            double o_plausibilty = 0;
+         
+            for (URI y : engine.getClasses()) {
+                
+                if(engine.getDescendantsInc(x).contains(y) || engine.getDescendantsInc(y).contains(x) || 
+                        !SetUtils.intersection(engine.getDescendantsInc(x), engine.getDescendantsInc(y)).isEmpty()){
+                    o_plausibilty += observations.containsKey(y) ? observations.get(y) : 0;
+                }
+            }
+            observations_4computing_plausibility.put(x, o_plausibilty);
+            System.out.println(x + "\t" + o_plausibilty);
         }
 
         System.out.println("Computing relevant descriptors");
@@ -197,7 +224,7 @@ public class IEEE_Summarizer {
         summaries = generate_summaries(onto_relevant_descriptors, engine_relevant_descriptors, most_specific_non_ordered_relevant_descriptors);
 
         // search best summary
-        return search_best_summary(descriptorsInEntries, observations, observations_with_indirect, summaries, engine);
+        return search_best_summary();
     }
 
     /**
@@ -251,7 +278,7 @@ public class IEEE_Summarizer {
         return summaries;
     }
 
-    public Set<URI> search_best_summary(Set<URI> descriptorsInEntries, Map<URI, Double> observations, Map<URI, Double> observations_with_indirect, Set<Set<URI>> summaries, SM_Engine engine) throws SLIB_Exception {
+    private Set<URI> search_best_summary() throws SLIB_Exception {
 
         IC_Conf_Topo icConf = new IC_Conf_Topo(SMConstants.FLAG_ICI_SECO_2004);
 
@@ -279,6 +306,13 @@ public class IEEE_Summarizer {
             belief.put(u, observations_with_indirect.get(u) / max_observations_with_indirect);
 
         }
+        
+        Map<URI, Double> plausibility = new HashMap();
+        for (URI u : observations_4computing_plausibility.keySet()) {
+            plausibility.put(u, observations_4computing_plausibility.get(u) / max_observations_with_indirect);
+
+        }
+        
 
         score_best_summary = null;
         best_summary = null;
@@ -292,7 +326,7 @@ public class IEEE_Summarizer {
             count++;
 
             System.out.println("Evaluating " + count + "/" + summaries.size());
-            double score = eval_summmary(summary, descriptorsInEntries, belief, observations, union_anc_descriptors, union_desc_descriptors, engine);
+            double score = eval_summmary(summary, descriptorsInEntries, belief, plausibility,observations, union_anc_descriptors, union_desc_descriptors, engine);
             summary_scores.put(summary, score);
 
             System.out.println(Utils.printSet(summary) + ": " + score);
@@ -324,6 +358,7 @@ public class IEEE_Summarizer {
     private double eval_summmary(Set<URI> summary,
             Set<URI> descriptorsInEntries,
             Map<URI, Double> belief,
+            Map<URI, Double> plausibilty,
             Map<URI, Double> observations,
             Set<URI> union_anc_descriptors,
             Set<URI> union_desc_descriptors,
@@ -367,9 +402,20 @@ public class IEEE_Summarizer {
         double delta_p_plus = 0;
         Set<URI> descriptor_descendants_not_covered = new HashSet(union_desc_descriptors);
         descriptor_descendants_not_covered.removeAll(union_desc_summary);
-
+        descriptor_descendants_not_covered.removeAll(union_anc_summary);
+        
         for (URI u : descriptor_descendants_not_covered) {
-            delta_p_plus += engine.getIC(icConf, u);
+            delta_p_plus += plausibilty.get(u) * engine.getIC(icConf, u);
+        }
+        // --------------------------------------------------------------------
+        // Delta P-
+        // --------------------------------------------------------------------
+        double delta_p_minus = 0;
+        Set<URI> descriptor_descendants_added = new HashSet(union_desc_summary);
+        descriptor_descendants_not_covered.removeAll(union_desc_descriptors);
+
+        for (URI u : descriptor_descendants_added) {
+            delta_p_minus += plausibilty.get(u) * engine.getIC(icConf, u);
         }
 
         // --------------------------------------------------------------------
@@ -389,19 +435,25 @@ public class IEEE_Summarizer {
             uncovered_ancestors.removeAll(union_anc_summary);
 
             for (URI uu : uncovered_ancestors) {
-                delta_d += engine.getIC(icConf, uu);
+                
+                double rel_belief = 0;
+                Set<URI> set_of_descriptors_to_consider = SetUtils.intersection(
+                        SetUtils.intersection(new HashSet(descriptorsInEntries), engine.getDescendantsInc(uu)), engine.getDescendantsInc(u));
+
+                for (URI d : set_of_descriptors_to_consider) {
+                    rel_belief += observations.get(d) / total_observations;
+                }
+            
+                delta_d += rel_belief * engine.getIC(icConf, uu);
             }
         }
-        double total_observations = 0;
-        for (URI u : descriptorsInEntries) {
-            total_observations += observations.get(u);
-        }
+        
         tau /= total_observations;
 
-        tau = Math.tan(Math.pow(tau, ALPHA_DELTA_D) * Math.PI / 2.0);
+        tau = -Math.log(1 - Math.pow(tau, ALPHA_DELTA_D));
         delta_d = tau * delta_d;
-
-        double delta = delta_e_minus + delta_p_plus + delta_d;
+        
+        double delta = p_delta_e_minus * delta_e_minus + p_delta_p_plus * delta_p_plus + p_delta_p_minus * delta_p_minus + p_delta_d * delta_d;
 
         // --------------------------------------------------------------------
         // - Lambda  -- Conciseness and redundancies penalties
@@ -436,20 +488,13 @@ public class IEEE_Summarizer {
         Set<URI> descriptor_ancestors_covered = SetUtils.intersection(union_anc_descriptors, union_anc_summary);
 
         // computing relative belief
-        double max_observations = 0;
-        for (URI u : descriptorsInEntries) {
-            if (observations.get(u) > max_observations) {
-                max_observations = observations.get(u);
-            }
-        }
-
         for (URI u : descriptor_ancestors_covered) {
 
             double rel_belief = 0;
             Set<URI> set_of_descriptors_to_consider = SetUtils.intersection(SetUtils.intersection(new HashSet(descriptorsInEntries), union_anc_summary), union_anc_descriptors);
 
             for (URI d : set_of_descriptors_to_consider) {
-                rel_belief += observations.get(d) / max_observations;
+                rel_belief += observations.get(d) / total_observations;
             }
             psi += rel_belief * engine.getIC(icConf, u);
         }
@@ -463,6 +508,7 @@ public class IEEE_Summarizer {
         System.out.println("\t Delta :  " + delta);
         System.out.println("\t\t delta E- :  " + delta_e_minus);
         System.out.println("\t\t delta P+ :  " + delta_p_plus);
+        System.out.println("\t\t delta P- :  " + delta_p_minus);
         System.out.println("\t\t delta D  :  " + delta_d);
         System.out.println("lambda    :  " + lambda);
         System.out.println("gamma     :  " + gamma);

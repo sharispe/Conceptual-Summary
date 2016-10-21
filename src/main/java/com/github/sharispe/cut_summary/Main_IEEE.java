@@ -58,9 +58,11 @@ public class Main_IEEE {
 
     public static void main(String[] args) throws Exception {
         
-        String onto_file = "/data/experiments/massissilia/cuts/taxo_vins.owl";
-        String label_file = "/data/experiments/massissilia/cuts/labels_taxo_vins.tsv";
-        String query_file = "/data/experiments/massissilia/cuts/query1.tsv";
+        
+        String dir = System.getProperty("user.dir");
+        String onto_file  = dir+"/data/xp/taxo_vins.owl";
+        String label_file = dir+"/data/xp/labels_taxo_vins.tsv";
+        String query_file = dir+"/data/xp/query1.tsv";
 
         URIFactory uriFactory = URIFactoryMemory.getSingleton();
 

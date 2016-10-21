@@ -32,9 +32,10 @@ public class XP_IEEE {
     public static void main(String[] args) throws Exception {
 
         // see data directory
-        String onto_file = "/data/experiments/massissilia/cuts/taxo_vins.owl";
-        String label_file = "/data/experiments/massissilia/cuts/labels_taxo_vins.tsv";
-        String query_file_directory = "/data/experiments/massissilia/cuts/queries/";
+        String dir = System.getProperty("user.dir");
+        String onto_file = dir+"/data/xp/taxo_vins.owl";
+        String label_file = dir+"/data/xp/labels_taxo_vins.tsv";
+        String query_file_directory = dir+"/data/xp/queries/";
 
         String file_product_ids = query_file_directory + "product_ids.csv";
 
