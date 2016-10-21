@@ -162,9 +162,11 @@ public class Utils {
 
                 if (header) {
                     header = false;
+                    line = br.readLine();
                     continue;
+                    
                 }
-
+                System.out.println("processing"+line);
                 String[] data = line.split(";");
 
                 if (data.length != 3) {

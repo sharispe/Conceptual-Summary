@@ -27,20 +27,23 @@ import slib.sml.sm.core.engine.SM_Engine;
  *
  * @author sharispe
  */
-public class XP_IEEE {
+public class XP_IEEE_SSCI_CIHLI_2016 {
 
     public static void main(String[] args) throws Exception {
 
         // see data directory
         String dir = System.getProperty("user.dir");
-        String onto_file = dir+"/data/xp/taxo_vins.owl";
-        String label_file = dir+"/data/xp/labels_taxo_vins.tsv";
-        String query_file_directory = dir+"/data/xp/queries/";
+        String onto_file = dir + "/data/xp/taxo_vins.owl";
+        String label_file = dir + "/data/xp/labels_taxo_vins.tsv";
+        String query_file_directory = dir + "/data/xp/queries/";
+
+        
 
         String file_product_ids = query_file_directory + "product_ids.csv";
 
         // Loading associated data
         URIFactory uriFactory = URIFactoryMemory.getSingleton();
+      
 
         // Loading labels of URIs
         Map<String, URI> index_LabelToURI = Utils.loadOntoLabels(label_file, uriFactory);
@@ -81,8 +84,8 @@ public class XP_IEEE {
         double average_fmesure = 0;
 
         for (Integer productID : product_ids) {
-            
-            System.out.println("Processing product "+productID);
+
+            System.out.println("Processing product " + productID);
 
             String query_file = query_file_directory + "/concepts/concepts_" + productID + ".csv";
             Set<EntryString> entries_String = Utils.loadJudgeEntries(query_file, uriFactory);
@@ -93,14 +96,12 @@ public class XP_IEEE {
             System.out.println("Summary: " + given_summary);
 
             String summary_file = query_file_directory + "/summaries/summary_" + productID + ".csv";
-            entries_String = Utils.loadEntries(summary_file, uriFactory,";");
+            entries_String = Utils.loadEntries(summary_file, uriFactory, ";");
             Set<Entry> entries_expected_summary = Utils.ConvertToEntry(index_LabelToURI, entries_String);
-            
-            
 
             Set<URI> expected_summary = Utils.getDescriptors(entries_expected_summary);
-            
-            System.out.println("Expected summary: "+expected_summary);
+
+            System.out.println("Expected summary: " + expected_summary);
 
             double precision = Utils.precision(expected_summary, given_summary);
             double recall = Utils.precision(expected_summary, given_summary);
@@ -116,7 +117,7 @@ public class XP_IEEE {
             System.out.println("Precision " + precision);
             System.out.println("Recall " + recall);
             System.out.println("F-mesure " + fmesure);
-            
+
         }
 
         average_precision /= product_ids.size();
