@@ -30,21 +30,51 @@ import slib.utils.impl.SetUtils;
  */
 public class IEEE_Summarizer {
 
+    // minimal number of observations required for a concept to be considered
+    // note that the observations will not be excluded but propagated to 
+    // the ancestors - only the ancestors with a minimal number of observations
+    // in accordance to the specified threshold will be considered. 
+    // This threshold is used to reduce the solution space. 
     private final static double MIN_NUMBER_OBSERVATIONS_IMPLICIT = 2;
-    private final static double ALPHA_DELTA_D = 1.0;
-    private final static double ALPHA_LAMBDA = 1.0;
-    private final static double p_delta_e_minus = 1;
-    private final static double p_delta_p_plus  = 0.5;
-    private final static double p_delta_p_minus = 0.5;
-    private final static double p_delta_d = 1;
 
+    // --------------------------------------------------------------------------------
+    // --------------------------------------------------------------------------------
+    // PARAMETERS
+    // --------------------------------------------------------------------------------
+    // --------------------------------------------------------------------------------
+    // Parameter defining the penalty with regard to loss of exact information
+    private final static double p_delta_e_minus = 50;
+
+    // Parameter defining the penalty with regard to the addition of plausible information
+    private final static double p_delta_p_plus = 0.5;
+
+    // Parameter defining the penalty with regard to loss of plausible information
+    private final static double p_delta_p_minus = 0.5;
+
+    // Parameter defining the penalty with regard to distortion of information
+    private final static double p_delta_d = 1000;
+    
+    // Parameter defining the penalty with regard to mass losses 
+    // when evaluating the distortion. 
+    // The lower the value, the more important will be the penalty wrt mass
+    private final static double ALPHA_BETA_DELTA_D = 1.0;
+
+    // Parameter defining the penalty with regard to conciseness and redundancy
+    // the more epsilon is important, the more the summaries will tend to be
+    // abstract
+    private final static double EPSILON_LAMBDA = 100.0;
+
+
+
+    // --------------------------------------------------------------------------------
+    // --------------------------------------------------------------------------------
     final SM_Engine engine;
     final G onto;
 
     private Set<URI> descriptorsInEntries;
-    
+
     private int total_observations = 0;
-    private Map<URI, Double> observations; 
+    private Map<URI, Double> observations;
     private Map<URI, Double> observations_with_indirect;
     private Map<URI, Double> observations_4computing_plausibility;
     private Map<Set<URI>, Double> summary_scores;
@@ -52,8 +82,6 @@ public class IEEE_Summarizer {
 
     private Set<URI> best_summary = null;
     private Double score_best_summary = null;
-    
-    
 
     public IEEE_Summarizer(SM_Engine engine) {
         this.engine = engine;
@@ -74,10 +102,10 @@ public class IEEE_Summarizer {
         for (Entry e : entries) {
             observations.put(e.descriptor, e.weight);
             total_observations += e.weight;
-            
+
             descriptorsInEntries.add(e.descriptor);
         }
-        System.out.println("Total observations: "+total_observations);
+        System.out.println("Total observations: " + total_observations);
 
         System.out.println("Observations (Explicit, i.e. focal) ------------------");
         for (URI descriptor : observations.keySet()) {
@@ -97,17 +125,17 @@ public class IEEE_Summarizer {
             observations_with_indirect.put(x, owi);
             System.out.println(x + "\t" + owi);
         }
-        
+
         System.out.println("Propagate observations (to compute Plausibility) ------------------");
         observations_4computing_plausibility = new HashMap();
-         for (URI x : engine.getClasses()) {
-            
+        for (URI x : engine.getClasses()) {
+
             double o_plausibilty = 0;
-         
+
             for (URI y : engine.getClasses()) {
-                
-                if(engine.getDescendantsInc(x).contains(y) || engine.getDescendantsInc(y).contains(x) || 
-                        !SetUtils.intersection(engine.getDescendantsInc(x), engine.getDescendantsInc(y)).isEmpty()){
+
+                if (engine.getDescendantsInc(x).contains(y) || engine.getDescendantsInc(y).contains(x)
+                        || !SetUtils.intersection(engine.getDescendantsInc(x), engine.getDescendantsInc(y)).isEmpty()) {
                     o_plausibilty += observations.containsKey(y) ? observations.get(y) : 0;
                 }
             }
@@ -306,13 +334,12 @@ public class IEEE_Summarizer {
             belief.put(u, observations_with_indirect.get(u) / max_observations_with_indirect);
 
         }
-        
+
         Map<URI, Double> plausibility = new HashMap();
         for (URI u : observations_4computing_plausibility.keySet()) {
             plausibility.put(u, observations_4computing_plausibility.get(u) / max_observations_with_indirect);
 
         }
-        
 
         score_best_summary = null;
         best_summary = null;
@@ -326,7 +353,7 @@ public class IEEE_Summarizer {
             count++;
 
             System.out.println("Evaluating " + count + "/" + summaries.size());
-            double score = eval_summmary(summary, descriptorsInEntries, belief, plausibility,observations, union_anc_descriptors, union_desc_descriptors, engine);
+            double score = eval_summmary(summary, descriptorsInEntries, belief, plausibility, observations, union_anc_descriptors, union_desc_descriptors, engine);
             summary_scores.put(summary, score);
 
             System.out.println(Utils.printSet(summary) + ": " + score);
@@ -403,7 +430,7 @@ public class IEEE_Summarizer {
         Set<URI> descriptor_descendants_not_covered = new HashSet(union_desc_descriptors);
         descriptor_descendants_not_covered.removeAll(union_desc_summary);
         descriptor_descendants_not_covered.removeAll(union_anc_summary);
-        
+
         for (URI u : descriptor_descendants_not_covered) {
             delta_p_plus += plausibilty.get(u) * engine.getIC(icConf, u);
         }
@@ -435,7 +462,7 @@ public class IEEE_Summarizer {
             uncovered_ancestors.removeAll(union_anc_summary);
 
             for (URI uu : uncovered_ancestors) {
-                
+
                 double rel_belief = 0;
                 Set<URI> set_of_descriptors_to_consider = SetUtils.intersection(
                         SetUtils.intersection(new HashSet(descriptorsInEntries), engine.getDescendantsInc(uu)), engine.getDescendantsInc(u));
@@ -443,16 +470,16 @@ public class IEEE_Summarizer {
                 for (URI d : set_of_descriptors_to_consider) {
                     rel_belief += observations.get(d) / total_observations;
                 }
-            
+
                 delta_d += rel_belief * engine.getIC(icConf, uu);
             }
         }
-        
+
         tau /= total_observations;
 
-        tau = -Math.log(1 - Math.pow(tau, ALPHA_DELTA_D));
+        tau = -Math.log(1 - Math.pow(tau, ALPHA_BETA_DELTA_D));
         delta_d = tau * delta_d;
-        
+
         double delta = p_delta_e_minus * delta_e_minus + p_delta_p_plus * delta_p_plus + p_delta_p_minus * delta_p_minus + p_delta_d * delta_d;
 
         // --------------------------------------------------------------------
@@ -470,7 +497,7 @@ public class IEEE_Summarizer {
             }
             lambda += (count - 1.0) * engine.getIC(icConf, u);
         }
-        lambda *= ALPHA_LAMBDA;
+        lambda *= EPSILON_LAMBDA;
 
         // --------------------------------------------------------------------
         // - Gamma  -- Additionnal constraint
@@ -488,16 +515,19 @@ public class IEEE_Summarizer {
         Set<URI> descriptor_ancestors_covered = SetUtils.intersection(union_anc_descriptors, union_anc_summary);
 
         // computing relative belief
+        System.out.println("PSI --------------------");
         for (URI u : descriptor_ancestors_covered) {
 
             double rel_belief = 0;
-            Set<URI> set_of_descriptors_to_consider = SetUtils.intersection(SetUtils.intersection(new HashSet(descriptorsInEntries), union_anc_summary), union_anc_descriptors);
+            Set<URI> set_of_descriptors_to_consider = SetUtils.intersection(SetUtils.intersection(new HashSet(descriptorsInEntries), engine.getDescendantsInc(u)), union_desc_summary);
 
             for (URI d : set_of_descriptors_to_consider) {
                 rel_belief += observations.get(d) / total_observations;
             }
+            System.out.println(u + "rel bel: " + rel_belief + "\t" + engine.getIC(icConf, u));
             psi += rel_belief * engine.getIC(icConf, u);
         }
+        System.out.println("END PSI --------------------");
 
         // --------------------------------------------------------------------
         // --------------------------------------------------------------------
@@ -517,8 +547,6 @@ public class IEEE_Summarizer {
 
         return score;
     }
-
-
 
     public Map<URI, Double> getObservations() {
         return observations;
