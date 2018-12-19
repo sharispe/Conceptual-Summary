@@ -285,7 +285,7 @@ public class Utils {
     // adapted from from http://stackoverflow.com/questions/4640034/calculating-all-of-the-subsets-of-a-set-of-numbers
     public static Set<Set<URI>> powerSet(Set<URI> originalSet) {
 
-        System.out.println("Computing power set of " + originalSet);
+        //System.out.println("Computing power set of " + originalSet);
 
         Set<Set<URI>> sets = new HashSet();
         if (originalSet.isEmpty()) {
@@ -302,7 +302,7 @@ public class Utils {
             sets.add(newSet);
             sets.add(set);
         }
-        System.out.println("pws done " + originalSet);
+        //System.out.println("pws done " + originalSet);
         return sets;
     }
 

@@ -27,7 +27,7 @@ public class Entry {
     
     @Override
     public String toString(){
-        return descriptor +"w="+weight ;
+        return descriptor.getLocalName() +" w="+weight ;
     }
 
 }

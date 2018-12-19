@@ -98,7 +98,7 @@ public class Main_IEEE {
         
         IEEE_Summarizer summarizer = new IEEE_Summarizer(engine);
 
-        Set<URI> summary = summarizer.summarize(entries);
+        Map<Set<URI>, Double> summary = summarizer.summarize(entries);
         System.out.println("Summary: "+summary);
     }
 

@@ -36,35 +36,44 @@ public class IEEE_Summarizer {
     // in accordance to the specified threshold will be considered. 
     // This threshold is used to reduce the solution space. 
     private final static double MIN_NUMBER_OBSERVATIONS_IMPLICIT = 2;
+    // Gives the possibility to apply a restriction to the solution explored
+    // only the concepts having a propagated mass greater than the sum of the masses 
+    // of the children of a concept will be considered if set to true
+    private final static boolean PROPAGATED_MASS_MUST_IMPROVE = false;
+
+    // Apply various strategies in order to reduce the number of summaries evaluated
+    private boolean REDUCE_ELIGBLE_SUMMARY_SET = true;
 
     // --------------------------------------------------------------------------------
     // --------------------------------------------------------------------------------
     // PARAMETERS
     // --------------------------------------------------------------------------------
     // --------------------------------------------------------------------------------
+    // Parameter defining the weight with regard to coverage
+    private static double p_psi = 1;
+    private static double p_delta = 1;
+
     // Parameter defining the penalty with regard to loss of exact information
-    private final static double p_delta_e_minus = 50;
+    private static double p_delta_e_minus = 2;
 
     // Parameter defining the penalty with regard to the addition of plausible information
-    private final static double p_delta_p_plus = 0.5;
+    private static double p_delta_p_plus = 0.2;
 
     // Parameter defining the penalty with regard to loss of plausible information
-    private final static double p_delta_p_minus = 0.5;
+    private static double p_delta_p_minus = 0.2;
 
     // Parameter defining the penalty with regard to distortion of information
-    private final static double p_delta_d = 1000;
-    
+    private static double p_delta_d = 10;
+
     // Parameter defining the penalty with regard to mass losses 
     // when evaluating the distortion. 
-    // The lower the value, the more important will be the penalty wrt mass
-    private final static double ALPHA_BETA_DELTA_D = 1.0;
+    // The larger the value, the more important will be the penalty wrt mass values in [1;+inf]
+    private static double ALPHA_BETA_DELTA_D = 1;
 
     // Parameter defining the penalty with regard to conciseness and redundancy
     // the more epsilon is important, the more the summaries will tend to be
     // abstract
-    private final static double EPSILON_LAMBDA = 100.0;
-
-
+    private static double EPSILON_LAMBDA = 20.0;
 
     // --------------------------------------------------------------------------------
     // --------------------------------------------------------------------------------
@@ -83,18 +92,45 @@ public class IEEE_Summarizer {
     private Set<URI> best_summary = null;
     private Double score_best_summary = null;
 
+    public static boolean log = true;
+
+    public static void log(Object s) {
+        if (log) {
+            System.out.println(s.toString());
+        }
+    }
+
     public IEEE_Summarizer(SM_Engine engine) {
         this.engine = engine;
         onto = engine.getGraph();
     }
 
-    public Set<URI> summarize(Set<Entry> entries) throws Exception {
+    public IEEE_Summarizer(SM_Engine engine, Map<String, Double> parameters, boolean log, boolean REDUCE_ELIGBLE_SUMMARY_SET) {
+        this(engine);
+        this.log = log;
+        p_psi = parameters.containsKey("p_psi") ? parameters.get("p_psi") : IEEE_Summarizer.p_psi;
+        p_delta = parameters.containsKey("p_delta") ? parameters.get("p_delta") : IEEE_Summarizer.p_delta;
+        p_delta_e_minus = parameters.containsKey("p_delta_e_minus") ? parameters.get("p_delta_e_minus") : IEEE_Summarizer.p_delta_e_minus;
+        p_delta_p_plus = parameters.containsKey("p_delta_p_plus") ? parameters.get("p_delta_p_plus") : IEEE_Summarizer.p_delta_p_plus;
+        p_delta_p_minus = parameters.containsKey("p_delta_p_minus") ? parameters.get("p_delta_p_minus") : IEEE_Summarizer.p_delta_p_minus;
+        p_delta_d = parameters.containsKey("p_delta_d") ? parameters.get("p_delta_d") : IEEE_Summarizer.p_delta_d;
+        ALPHA_BETA_DELTA_D = parameters.containsKey("ALPHA_BETA_DELTA_D") ? parameters.get("ALPHA_BETA_DELTA_D") : IEEE_Summarizer.ALPHA_BETA_DELTA_D;
+        EPSILON_LAMBDA = parameters.containsKey("EPSILON_LAMBDA") ? parameters.get("EPSILON_LAMBDA") : IEEE_Summarizer.EPSILON_LAMBDA;
+        this.REDUCE_ELIGBLE_SUMMARY_SET = REDUCE_ELIGBLE_SUMMARY_SET;
+    }
 
-        System.out.println("entries: " + entries);
-        System.out.println("Removing duplicate entries if any");
+    public Set<URI> getBestSummary(Set<Entry> entries) throws Exception {
+        summarize(entries);
+        return best_summary;
+    }
+
+    public Map<Set<URI>, Double> summarize(Set<Entry> entries) throws Exception {
+
+        log("entries: " + entries);
+        log("Removing duplicate entries if any");
         entries = Utils.removeDuplicate(entries);
 
-        System.out.println("entries: " + entries);
+        log("entries: " + entries);
 
         descriptorsInEntries = new HashSet();
 
@@ -105,15 +141,15 @@ public class IEEE_Summarizer {
 
             descriptorsInEntries.add(e.descriptor);
         }
-        System.out.println("Total observations: " + total_observations);
+        log("Total observations: " + total_observations);
 
-        System.out.println("Observations (Explicit, i.e. focal) ------------------");
+        log("Observations (Explicit, i.e. focal) ------------------");
         for (URI descriptor : observations.keySet()) {
-            System.out.println(descriptor + "\t" + observations.get(descriptor));
+            log(descriptor + "\t" + observations.get(descriptor));
         }
-        System.out.println("-------------------------");
+        log("-------------------------");
 
-        System.out.println("Observations (with implicit references) ------------------");
+        log("Observations (with implicit references) ------------------");
 
         // Compute observations considering implicit references
         observations_with_indirect = new HashMap();
@@ -123,10 +159,10 @@ public class IEEE_Summarizer {
                 owi += observations.containsKey(y) ? observations.get(y) : 0;
             }
             observations_with_indirect.put(x, owi);
-            System.out.println(x + "\t" + owi);
+//            log(x + "\t" + owi);
         }
 
-        System.out.println("Propagate observations (to compute Plausibility) ------------------");
+        log("Propagate observations (to compute Plausibility) ------------------");
         observations_4computing_plausibility = new HashMap();
         for (URI x : engine.getClasses()) {
 
@@ -140,47 +176,54 @@ public class IEEE_Summarizer {
                 }
             }
             observations_4computing_plausibility.put(x, o_plausibilty);
-            System.out.println(x + "\t" + o_plausibilty);
+            log(x + "\t" + o_plausibilty);
         }
 
-        System.out.println("Computing relevant descriptors");
-        System.out.println("min number of implicit observations: " + MIN_NUMBER_OBSERVATIONS_IMPLICIT);
+        log("Computing relevant descriptors");
+        log("min number of implicit observations: " + MIN_NUMBER_OBSERVATIONS_IMPLICIT);
         // a descriptor is considered relevant if the implicit observation is greater 
         // than a given threshold and if the number of implicit observations of the descriptor
         // is greater than the sum of the observations of its children
 
         Set<URI> relevant_descriptors = new HashSet(); // all the concepts adding information
 
-        for (URI x : engine.getClasses()) {
+        if (REDUCE_ELIGBLE_SUMMARY_SET) {
 
-            boolean isRelevant = true;
+            for (URI x : engine.getClasses()) {
 
-            if (observations_with_indirect.get(x) >= MIN_NUMBER_OBSERVATIONS_IMPLICIT) {
+                boolean isRelevant = true;
 
-                // check if the propagated mass associated to the concept
-                // is more important than the propagated mass of each of its children
-                double nb_observations_current = observations_with_indirect.get(x);
+                if (observations_with_indirect.get(x) >= MIN_NUMBER_OBSERVATIONS_IMPLICIT) {
 
-                for (URI c : onto.getV(x, RDFS.SUBCLASSOF, Direction.IN)) {
+                    // check if the propagated mass associated to the concept
+                    // is more important than the propagated mass of each of its children
+                    if (PROPAGATED_MASS_MUST_IMPROVE) {
+                        double nb_observations_current = observations_with_indirect.get(x);
 
-                    if (!c.equals(x) && observations_with_indirect.get(c) >= nb_observations_current) {
-                        isRelevant = false;
-                        break;
+                        for (URI c : onto.getV(x, RDFS.SUBCLASSOF, Direction.IN)) {
+
+                            if (!c.equals(x) && observations_with_indirect.get(c) >= nb_observations_current) {
+                                isRelevant = false;
+                                break;
+                            }
+                        }
                     }
+                } else {
+                    isRelevant = false;
                 }
-            } else {
-                isRelevant = false;
-            }
 
-            if (isRelevant) {
-                relevant_descriptors.add(x);
-                System.out.println("Add: " + x);
-            } else {
-                System.out.println("Remove " + x);
+                if (isRelevant) {
+                    relevant_descriptors.add(x);
+                    log("Add: " + x);
+                } else {
+                    log("Remove " + x);
+                }
             }
+        } else {
+            relevant_descriptors.addAll(engine.getClasses());
         }
 
-        System.out.println("Compute relevant ancestors");
+        log("Compute relevant ancestors");
 
         // Modify the set of ancestors only considering the informative concepts
         Map<URI, Set<URI>> ancestors_relevant = new HashMap();
@@ -197,13 +240,13 @@ public class IEEE_Summarizer {
             ancestors_relevant.put(x, ancs_relevant_current);
         }
 
-        System.out.println("Compute graph only considering relevant concepts");
+        log("Compute graph only considering relevant concepts");
         // We generate the new graph by contructing the transitive closure
         // and then applying the transitive reduction
         G onto_relevant_descriptors = new GraphMemory(null);
         for (URI x : relevant_descriptors) {
-            System.out.println(x);
-            System.out.println(ancestors_relevant.get(x));
+            log(x);
+            log(ancestors_relevant.get(x));
             for (URI a : ancestors_relevant.get(x)) {
                 onto_relevant_descriptors.addE(x, RDFS.SUBCLASSOF, a);
             }
@@ -211,15 +254,15 @@ public class IEEE_Summarizer {
         // apply transitive reduction
         GAction tr2 = new GAction(GActionType.TRANSITIVE_REDUCTION);
         GraphActionExecutor.applyAction(tr2, onto_relevant_descriptors);
-        System.out.println("reduced graph: " + onto_relevant_descriptors);
+        log("reduced graph: " + onto_relevant_descriptors);
 
         for (E e : onto_relevant_descriptors.getE()) {
-            System.out.println(e);
+            log(e);
         }
 
         SM_Engine engine_relevant_descriptors = new SM_Engine(onto_relevant_descriptors);
 
-        System.out.println("Reducing set of entries");
+        log("Reducing set of entries");
 
         Set<URI> relevant_descriptors_in_entries = new HashSet();
 
@@ -229,10 +272,10 @@ public class IEEE_Summarizer {
             }
         }
 
-        System.out.println("Reduction applied: " + entries.size() + "/" + relevant_descriptors_in_entries.size());
+        log("Reduction applied: " + entries.size() + "/" + relevant_descriptors_in_entries.size());
 
         Set<URI> most_specific_non_ordered_relevant_descriptors = new HashSet();
-        System.out.println("Removing redundant concepts for computing the set of summaries to evaluate");
+        log("Removing redundant concepts for computing the set of summaries to evaluate");
         for (URI x : relevant_descriptors_in_entries) {
             boolean redundant = false;
             for (URI y : relevant_descriptors_in_entries) {
@@ -246,13 +289,13 @@ public class IEEE_Summarizer {
             }
         }
 
-        System.out.println("Reduction applied: " + most_specific_non_ordered_relevant_descriptors.size() + "/" + entries.size());
+        log("Reduction applied: " + most_specific_non_ordered_relevant_descriptors.size() + "/" + entries.size());
 
         // génération des coupes
         summaries = generate_summaries(onto_relevant_descriptors, engine_relevant_descriptors, most_specific_non_ordered_relevant_descriptors);
 
         // search best summary
-        return search_best_summary();
+        return compute_summary_scores();
     }
 
     /**
@@ -263,28 +306,30 @@ public class IEEE_Summarizer {
      */
     public static Set<Set<URI>> generate_summaries(G graph, SM_Engine engine, Set<URI> X) {
 
-        System.out.println("Generating summaries  for " + X.size() + " concepts, size: " + Math.pow(2, X.size()));
+        log("Generating summaries  for " + X.size() + " concepts, size: " + Math.pow(2, X.size()));
 
         Set<Set<URI>> summaries = new HashSet();
         generate_summaries_inner(graph, engine, X, summaries);
 
         for (Set<URI> subset_X : Utils.powerSet(X)) {
-            System.out.println("generating summaries for: " + subset_X);
+            log("generating summaries for: " + subset_X);
             summaries.add(subset_X);
             generate_summaries_inner(graph, engine, subset_X, summaries);
         }
 
-        System.out.println(summaries.size() + " summaries generated for " + X);
+        log(summaries.size() + " summaries generated for " + X);
+
         return summaries;
     }
 
     private static Set<Set<URI>> generate_summaries_inner(G graph, SM_Engine engine, Set<URI> X, Set<Set<URI>> summaries) {
 
-        System.out.println("total=" + summaries.size() + "\tgenerating summaries for (" + X.size() + ")\t" + Utils.printSet(X));
+        log("total=" + summaries.size() + "\tgenerating summaries for (" + X.size() + ")\t" + Utils.printSet(X));
 
         int c = 0;
 
         for (URI d : X) {
+
             c++;
             Set<URI> A_d = graph.getV(d, RDFS.SUBCLASSOF, Direction.OUT);
             Set<URI> X_ = new HashSet(X);
@@ -297,16 +342,20 @@ public class IEEE_Summarizer {
                 }
             }
             X_.removeAll(R);
-            X_.addAll(A_d);
-            if (!summaries.contains(X_) && !X_.isEmpty()) {
-                summaries.add(X_);
-                generate_summaries_inner(graph, engine, X_, summaries);
+
+            for (Set<URI> As_d : Utils.powerSet(A_d)) {
+                Set<URI> X__ = new HashSet(X_);
+                X__.addAll(As_d);
+                if (!summaries.contains(X__) && !X__.isEmpty()) {
+                    summaries.add(X__);
+                    generate_summaries_inner(graph, engine, X__, summaries);
+                }
             }
         }
         return summaries;
     }
 
-    private Set<URI> search_best_summary() throws SLIB_Exception {
+    public Map<Set<URI>, Double> compute_summary_scores() throws SLIB_Exception {
 
         IC_Conf_Topo icConf = new IC_Conf_Topo(SMConstants.FLAG_ICI_SECO_2004);
 
@@ -319,10 +368,10 @@ public class IEEE_Summarizer {
         }
 
         // computing IC
-        System.out.println("IC");
+        log("IC");
         engine.getIC_results(icConf);
 
-        System.out.println("Computing belief");
+        log("Computing belief");
         double max_observations_with_indirect = 0;
         for (URI u : observations_with_indirect.keySet()) {
             if (observations_with_indirect.get(u) > max_observations_with_indirect) {
@@ -352,20 +401,20 @@ public class IEEE_Summarizer {
 
             count++;
 
-            System.out.println("Evaluating " + count + "/" + summaries.size());
+            log("Evaluating " + count + "/" + summaries.size());
             double score = eval_summmary(summary, descriptorsInEntries, belief, plausibility, observations, union_anc_descriptors, union_desc_descriptors, engine);
             summary_scores.put(summary, score);
 
-            System.out.println(Utils.printSet(summary) + ": " + score);
+            log(Utils.printSet(summary) + ": " + score);
 
             if (score_best_summary == null || score > score_best_summary) {
                 score_best_summary = score;
                 best_summary = summary;
             }
-            System.out.println("[best summary]" + Utils.printSet(best_summary) + ": " + score);
+            log("[best summary]" + Utils.printSet(best_summary) + ": " + score);
         }
 
-        //System.out.println(descriptorsInEntries + "\t" + eval_cut(descriptorsInEntries, descriptorsInEntries, observations_with_indirect, observations, engine));
+        //log(descriptorsInEntries + "\t" + eval_cut(descriptorsInEntries, descriptorsInEntries, observations_with_indirect, observations, engine));
         for (Map.Entry<Set<URI>, Double> e : MapUtils.sortByValue(summary_scores).entrySet()) {
 
             String sval = "";
@@ -374,10 +423,17 @@ public class IEEE_Summarizer {
                 sval += c.getLocalName() + " (" + observations_with_indirect.get(c) + ") - ";
             }
 
-            System.out.println(e.getValue() + "\t" + sval);
+            log(e.getValue() + "\t" + sval);
         }
 
-        System.out.println("best : " + Utils.printSet(best_summary) + "\t" + score_best_summary);
+        log("best : " + Utils.printSet(best_summary) + "\t" + score_best_summary);
+
+        return new HashMap(summary_scores);
+    }
+
+    private Set<URI> search_best_summary() throws SLIB_Exception {
+
+        compute_summary_scores();
 
         return best_summary;
     }
@@ -393,9 +449,9 @@ public class IEEE_Summarizer {
 
         IC_Conf_Topo icConf = new IC_Conf_Topo(SMConstants.FLAG_ICI_SECO_2004);
 
-        System.out.println("----------------------------------------------------");
-        System.out.println("Y=" + Utils.printSet(summary));
-        System.out.println("----------------------------------------------------");
+        log("----------------------------------------------------");
+        log("Y=" + Utils.printSet(summary));
+        log("----------------------------------------------------");
 
         Set<URI> union_anc_summary = new HashSet();
         Set<URI> union_desc_summary = new HashSet();
@@ -424,26 +480,33 @@ public class IEEE_Summarizer {
         }
 
         // --------------------------------------------------------------------
-        // Delta P+
-        // --------------------------------------------------------------------
-        double delta_p_plus = 0;
-        Set<URI> descriptor_descendants_not_covered = new HashSet(union_desc_descriptors);
-        descriptor_descendants_not_covered.removeAll(union_desc_summary);
-        descriptor_descendants_not_covered.removeAll(union_anc_summary);
-
-        for (URI u : descriptor_descendants_not_covered) {
-            delta_p_plus += plausibilty.get(u) * engine.getIC(icConf, u);
-        }
-        // --------------------------------------------------------------------
         // Delta P-
         // --------------------------------------------------------------------
         double delta_p_minus = 0;
-        Set<URI> descriptor_descendants_added = new HashSet(union_desc_summary);
-        descriptor_descendants_not_covered.removeAll(union_desc_descriptors);
+        Set<URI> descriptor_descendants_not_covered = new HashSet(union_desc_descriptors);
+        descriptor_descendants_not_covered.removeAll(descriptorsInEntries);
+        descriptor_descendants_not_covered.removeAll(union_desc_summary);
+        descriptor_descendants_not_covered.removeAll(union_anc_summary);
 
-        for (URI u : descriptor_descendants_added) {
+        log("Delta P- members: " + descriptor_descendants_not_covered);
+
+        for (URI u : descriptor_descendants_not_covered) {
             delta_p_minus += plausibilty.get(u) * engine.getIC(icConf, u);
         }
+        // --------------------------------------------------------------------
+        // Delta P+
+        // --------------------------------------------------------------------
+        double delta_p_plus = 0;
+        Set<URI> descriptor_descendants_added = new HashSet(union_desc_summary);
+        descriptor_descendants_added.removeAll(union_desc_descriptors);
+        descriptor_descendants_added.removeAll(union_anc_descriptors);
+
+        log("Delta P+ members: " + descriptor_descendants_added);
+
+        for (URI u : descriptor_descendants_added) {
+            delta_p_plus += plausibilty.get(u) * engine.getIC(icConf, u);
+        }
+        log(delta_p_plus);
 
         // --------------------------------------------------------------------
         // Delta D
@@ -477,10 +540,13 @@ public class IEEE_Summarizer {
 
         tau /= total_observations;
 
+        log("tau (tmp): " + tau);
         tau = -Math.log(1 - Math.pow(tau, ALPHA_BETA_DELTA_D));
-        delta_d = tau * delta_d;
+        log("tau: " + tau);
+        //delta_d = tau * delta_d;
+        delta_d = tau;
 
-        double delta = p_delta_e_minus * delta_e_minus + p_delta_p_plus * delta_p_plus + p_delta_p_minus * delta_p_minus + p_delta_d * delta_d;
+        double delta = p_delta_e_minus * delta_e_minus + p_delta_p_minus * delta_p_minus + p_delta_p_plus * delta_p_plus + p_delta_d * delta_d;
 
         // --------------------------------------------------------------------
         // - Lambda  -- Conciseness and redundancies penalties
@@ -515,7 +581,7 @@ public class IEEE_Summarizer {
         Set<URI> descriptor_ancestors_covered = SetUtils.intersection(union_anc_descriptors, union_anc_summary);
 
         // computing relative belief
-        System.out.println("PSI --------------------");
+        log("PSI --------------------");
         for (URI u : descriptor_ancestors_covered) {
 
             double rel_belief = 0;
@@ -524,26 +590,26 @@ public class IEEE_Summarizer {
             for (URI d : set_of_descriptors_to_consider) {
                 rel_belief += observations.get(d) / total_observations;
             }
-            System.out.println(u + "rel bel: " + rel_belief + "\t" + engine.getIC(icConf, u));
+            log(u + "rel bel: " + rel_belief + "\t" + engine.getIC(icConf, u));
             psi += rel_belief * engine.getIC(icConf, u);
         }
-        System.out.println("END PSI --------------------");
+        log("END PSI --------------------");
 
         // --------------------------------------------------------------------
         // --------------------------------------------------------------------
-        double score = psi - loss;
+        double score = p_psi * psi - p_delta * loss;
 
-        System.out.println("Psi :  " + psi);
-        System.out.println("Loss :  " + loss);
-        System.out.println("\t Delta :  " + delta);
-        System.out.println("\t\t delta E- :  " + delta_e_minus);
-        System.out.println("\t\t delta P+ :  " + delta_p_plus);
-        System.out.println("\t\t delta P- :  " + delta_p_minus);
-        System.out.println("\t\t delta D  :  " + delta_d);
-        System.out.println("lambda    :  " + lambda);
-        System.out.println("gamma     :  " + gamma);
-        System.out.println("score:  " + score);
-        System.out.println("----------------------------------------------------");
+        log("Psi :  " + psi);
+        log("Loss :  " + loss);
+        log("\t Delta :  " + delta);
+        log("\t\t delta E- :  " + p_delta_e_minus + " * " + delta_e_minus);
+        log("\t\t delta P+ :  " + p_delta_p_plus + " * " + delta_p_plus);
+        log("\t\t delta P- :  " + p_delta_p_minus + " * " + delta_p_minus);
+        log("\t\t delta D  :  " + p_delta_d + " * " + delta_d);
+        log("lambda    :  " + lambda);
+        log("gamma     :  " + gamma);
+        log("score:  " + score);
+        log("----------------------------------------------------");
 
         return score;
     }
