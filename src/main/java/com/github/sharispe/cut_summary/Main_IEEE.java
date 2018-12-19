@@ -63,6 +63,7 @@ public class Main_IEEE {
         String onto_file  = dir+"/data/xp/taxo_vins.owl";
         String label_file = dir+"/data/xp/labels_taxo_vins.tsv";
         String query_file = dir+"/data/xp/query1.tsv";
+        String output_file = dir+"/data/xp/query1_output.tmp";
 
         URIFactory uriFactory = URIFactoryMemory.getSingleton();
 
@@ -98,7 +99,7 @@ public class Main_IEEE {
         
         IEEE_Summarizer summarizer = new IEEE_Summarizer(engine);
 
-        Map<Set<URI>, Double> summary = summarizer.summarize(entries);
+        Map<Set<URI>, Double> summary = summarizer.summarize(entries,output_file);
         System.out.println("Summary: "+summary);
     }
 

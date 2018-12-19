@@ -92,7 +92,7 @@ public class XP_IEEE_SSCI_CIHLI_2016 {
 
             Set<Entry> entries = Utils.ConvertToEntry(index_LabelToURI, entries_String);
 
-            Set<URI> given_summary = summarizer.getBestSummary(entries);
+            Set<URI> given_summary = summarizer.getBestSummary(entries,null);
             System.out.println("Summary: " + given_summary);
 
             String summary_file = query_file_directory + "/summaries/summary_" + productID + ".csv";

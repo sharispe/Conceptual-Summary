@@ -5,6 +5,9 @@
  */
 package com.github.sharispe.cut_summary;
 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -119,12 +122,12 @@ public class IEEE_Summarizer {
         this.REDUCE_ELIGBLE_SUMMARY_SET = REDUCE_ELIGBLE_SUMMARY_SET;
     }
 
-    public Set<URI> getBestSummary(Set<Entry> entries) throws Exception {
-        summarize(entries);
+    public Set<URI> getBestSummary(Set<Entry> entries, String outputFilePath) throws Exception {
+        summarize(entries, outputFilePath);
         return best_summary;
     }
 
-    public Map<Set<URI>, Double> summarize(Set<Entry> entries) throws Exception {
+    public Map<Set<URI>, Double> summarize(Set<Entry> entries, String outputFilePath) throws Exception {
 
         log("entries: " + entries);
         log("Removing duplicate entries if any");
@@ -295,7 +298,7 @@ public class IEEE_Summarizer {
         summaries = generate_summaries(onto_relevant_descriptors, engine_relevant_descriptors, most_specific_non_ordered_relevant_descriptors);
 
         // search best summary
-        return compute_summary_scores();
+        return compute_summary_scores(outputFilePath);
     }
 
     /**
@@ -355,7 +358,7 @@ public class IEEE_Summarizer {
         return summaries;
     }
 
-    public Map<Set<URI>, Double> compute_summary_scores() throws SLIB_Exception {
+    public Map<Set<URI>, Double> compute_summary_scores(String outputFilePath) throws SLIB_Exception, IOException {
 
         IC_Conf_Topo icConf = new IC_Conf_Topo(SMConstants.FLAG_ICI_SECO_2004);
 
@@ -415,6 +418,8 @@ public class IEEE_Summarizer {
         }
 
         //log(descriptorsInEntries + "\t" + eval_cut(descriptorsInEntries, descriptorsInEntries, observations_with_indirect, observations, engine));
+        boolean outputInFile = outputFilePath != null;
+        String outfile = "";
         for (Map.Entry<Set<URI>, Double> e : MapUtils.sortByValue(summary_scores).entrySet()) {
 
             String sval = "";
@@ -424,16 +429,25 @@ public class IEEE_Summarizer {
             }
 
             log(e.getValue() + "\t" + sval);
+            outfile += e.getValue() + "\t" + sval+"\n";
         }
 
+        if(outputInFile){
+            FileWriter fileWriter = new FileWriter(outputFilePath);
+            PrintWriter printWriter = new PrintWriter(fileWriter);
+            printWriter.print(outfile);
+            printWriter.printf(outfile);
+            printWriter.close();
+
+        }
         log("best : " + Utils.printSet(best_summary) + "\t" + score_best_summary);
 
         return new HashMap(summary_scores);
     }
 
-    private Set<URI> search_best_summary() throws SLIB_Exception {
+    private Set<URI> search_best_summary(String outputFilePath) throws SLIB_Exception, IOException {
 
-        compute_summary_scores();
+        compute_summary_scores(outputFilePath);
 
         return best_summary;
     }

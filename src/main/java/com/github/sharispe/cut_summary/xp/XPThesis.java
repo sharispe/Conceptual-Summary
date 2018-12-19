@@ -108,7 +108,7 @@ public class XPThesis {
             System.out.println(q.id);
             System.out.println(q.queryConceptMasses);
 
-            Map<Set<URI>, Double> summary_scores = summarizer.summarize(q.queryConceptMasses);
+            Map<Set<URI>, Double> summary_scores = summarizer.summarize(q.queryConceptMasses,null);
 
             System.out.println("Query: " + q.queryConceptMasses);
 

@@ -128,7 +128,7 @@ public class XPThesis_whiskey {
                 entries.add(new Entry(u, 2));
             }
 
-            Map<Set<URI>, Double> summary_scores = summarizer.summarize(entries);
+            Map<Set<URI>, Double> summary_scores = summarizer.summarize(entries,null);
 
             String best_summary = null;
 
