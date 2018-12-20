@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1477067418051" name="http://www.owl-ontologies.com/Ontology1456566482.owl" uri="taxo_vins.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1545305681786" name="http://www.owl-ontologies.com/Ontology1456566482.owl" uri="taxo_vins.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1545305681786" name="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60" uri="taxo_xp_odeurs.owl"/>
     </group>
 </catalog>

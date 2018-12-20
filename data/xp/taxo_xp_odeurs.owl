@@ -1,0 +1,510 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#"
+     xml:base="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Acidulé -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Acidulé"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Agrumes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Agrumes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Alcool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Alcool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Solvant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Alcool-Fermenté -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Alcool-Fermenté">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Alcool"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Fermenté"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Amande -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Amande">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Doux"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Ananas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Ananas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Fruité"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Betterave_cuite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Betterave_cuite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Doux"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Beurre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Beurre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Gras"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Boisé -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Boisé"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Bonbon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Bonbon"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Caramel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Caramel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Champignon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Champignon"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Chocolat_noir -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Chocolat_noir"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Choux -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Choux">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Soufré"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Citron -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Citron">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Agrumes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Citron_vert -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Citron_vert">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Agrumes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Colle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Colle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Colle_Cléopatra -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Colle_Cléopatra">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Colle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Crémeux -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Crémeux">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Gras"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Dissolvant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Dissolvant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Solvant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Doux -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Doux"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Décomposition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Décomposition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Pourri"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Désinfectant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Désinfectant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Solvant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Epicé -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Epicé"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Fermenté -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Fermenté"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Feuilles_verte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Feuilles_verte"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Fleuri -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Fleuri">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Doux"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Floral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Floral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Doux"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Frais -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Frais"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Fraise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Fraise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Fruité"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Fruité -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Fruité">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Doux"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Fumée -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Fumée"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Gras -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Gras"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Humus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Humus"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Jasmin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Jasmin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Floral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Lys -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Lys">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Floral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Mandarine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Mandarine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Agrumes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Mangue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Mangue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Fruité"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Melon_pas_mûr -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Melon_pas_mûr">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Zest_d&apos;agrumes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Mimosa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Mimosa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Floral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Mousissure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Mousissure"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Musqué -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Musqué"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Orange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Orange">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Agrumes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Ordure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Ordure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Pourri"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Ordure-Décomposition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Ordure-Décomposition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Décomposition"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Ordure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Pamplemousse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Pamplemousse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Agrumes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Peinture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Peinture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Solvant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Pin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Pin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Frais"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Piquant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Piquant"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Poivré -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Poivré">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Epicé"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Pomme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Pomme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Fruité"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Pourri -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Pourri"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Pourriture_de_légumes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Pourriture_de_légumes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Ordure-Décomposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Rance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Rance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Gras"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Piquant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Rose -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Rose">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Floral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Rose_fleurie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Rose_fleurie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Fleuri"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Floral"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Rose"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Solvant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Solvant"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Soufré -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Soufré"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Sucré -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Sucré">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Bonbon"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Doux"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Vanille -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Vanille">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Doux"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Violette -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Violette">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Floral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Vomi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Vomi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Rance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Végétaux_secs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Végétaux_secs"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Fleur_d&apos;oranger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Fleur_d&apos;oranger"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Produit_d&apos;entretien -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Produit_d&apos;entretien"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Zest_d&apos;agrumes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Zest_d&apos;agrumes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Agrumes"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
