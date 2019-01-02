@@ -1,0 +1,107 @@
+
+#####################################
+# Match words to concepts
+#####################################
+*** Matching concepts with embeddings ([m] = exact matching, [l] = matching with lemmatized concepts, [-] = concept not found) ***
+	[m] fumée -> fumée
+	[m] violette -> violette
+	[-] ordure_décomposition -> not_found
+	[m] amande -> amande
+	[m] fermenté -> fermenté
+	[m] bonbon -> bonbon
+	[m] mangue -> mangue
+	[m] chocolat_noir -> chocolat_noir
+	[m] lys -> lys
+	[-] fleur_d'oranger -> not_found
+	[m] mimosa -> mimosa
+	[m] mandarine -> mandarine
+	[m] fruité -> fruité
+	[m] piquant -> piquant
+	[m] beurre -> beurre
+	[m] floral -> floral
+	[m] rance -> rance
+	[-] rose_fleurie -> not_found
+	[m] citron_vert -> citron_vert
+	[m] frais -> frais
+	[-] alcool_fermenté -> not_found
+	[m] citron -> citron
+	[-] musqué -> not_found
+	[m] orange -> orange
+	[l] poivré -> poivrer
+	[m] dissolvant -> dissolvant
+	[m] moisissure -> moisissure
+	[m] choux -> choux
+	[m] solvant -> solvant
+	[-] boisé -> not_found
+	[m] peinture -> peinture
+	[m] rose -> rose
+	[-] betterave_cuite -> not_found
+	[-] colle_cléopatra -> not_found
+	[m] jasmin -> jasmin
+	[m] pin -> pin
+	[m] colle -> colle
+	[m] gras -> gras
+	[-] melon_pas_mûr -> not_found
+	[l] acidulé -> aciduler
+	[m] ordure -> ordure
+	[m] pomme -> pomme
+	[m] sucré -> sucré
+	[m] doux -> doux
+	[m] fraise -> fraise
+	[m] fleuri -> fleuri
+	[m] vanille -> vanille
+	[m] pamplemousse -> pamplemousse
+	[-] végétaux_secs -> not_found
+	[-] pourriture_de_légumes -> not_found
+	[-] feuille_verte -> not_found
+	[m] alcool -> alcool
+	[-] produit_d'entretien -> not_found
+	[m] crémeux -> crémeux
+	[m] désinfectant -> désinfectant
+	[m] agrume -> agrume
+	[m] ananas -> ananas
+	[m] caramel -> caramel
+	[m] décomposition -> décomposition
+	[l] épicé -> épicer
+	[l] soufré -> soufrer
+	[m] humus -> humus
+	[-] zeste_d'agrumes -> not_found
+	[m] vomi -> vomi
+	[m] champignon -> champignon
+	[m] pourri -> pourri
+*** Matching words with concepts ([m] = exact matching, [e] = matching with embeddings, [d] = word already seen, [-] = matching not found) ***
+	[-] parfum_féminin -> not_found
+	[m] jasmin -> jasmin
+	[-] parfum_féminin -> not_found
+	[m] rose -> rose
+	[m] violette -> violette
+	[-] fruité_mandarine -> not_found
+	[-] bonbon_à_la_fleur_-_parfum_féminin -> not_found
+	[m] fleur_d'oranger -> fleur d'oranger
+	[d] violette -> violette
+	[-] sucré_du_bonbon -> not_found
+	[e] citronné -> fruité
+	[-] parfum_féminin -> not_found
+	[a] agrumes -> agrume
+
+	[d] fleur_d'oranger -> fleur d'oranger
+	[m] lys -> lys
+	[m] mandarine -> mandarine
+	[-] parfum_féminin -> not_found
+	[m] mangue -> mangue
+	[m] ananas -> ananas
+	[-] sucré_du_bonbon -> not_found
+	[d] lys -> lys
+	[d] violette -> violette
+	[-] parfum_féminin -> not_found
+	[-] sucré_du_bonbon -> not_found
+	[m] épicé -> épicé
+	[d] fleur_d'oranger -> fleur d'oranger
+	[d] agrumes -> agrume
+	[-] parfum_féminin -> not_found
+	[-] bonbon_très_sucré -> not_found
+	[d] fleur_d'oranger -> fleur d'oranger
+	[d] jasmin -> jasmin
+	[e] faisander -> vomi
+*** Best resume ***
+-2.8592424697656758	Doux (11.0) - Agrumes (3.0) - Fleur_doranger (4.0) -

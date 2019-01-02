@@ -297,7 +297,7 @@
     <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Melon_pas_mûr -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Melon_pas_mûr">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Zest_d&apos;agrumes"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Zest_dagrumes"/>
     </owl:Class>
     
 
@@ -485,21 +485,21 @@
     
 
 
-    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Fleur_d&apos;oranger -->
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Fleur_doranger -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Fleur_d&apos;oranger"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Fleur_doranger"/>
     
 
 
-    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Produit_d&apos;entretien -->
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Produit_dentretien -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Produit_d&apos;entretien"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Produit_dentretien"/>
     
 
 
-    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Zest_d&apos;agrumes -->
+    <!-- http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Zest_dagrumes -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Zest_d&apos;agrumes">
+    <owl:Class rdf:about="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Zest_dagrumes">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharispe/ontologies/2018/11/untitled-ontology-60#Agrumes"/>
     </owl:Class>
 </rdf:RDF>
